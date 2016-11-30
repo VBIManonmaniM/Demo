@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.visualbi.charts.feature_1.0.0.qualifier.jar" id="com.visualbi.charts.feature" version="1.1.2">
+      <category name="com.sap.ip.bi.zen.sdk"/>
+   </feature>
+   <feature url="features/com.visualbi.maps.feature_1.0.0.qualifier.jar" id="com.visualbi.maps.feature" version="1.1.2">
+      <category name="com.sap.ip.bi.zen.sdk"/>
+   </feature> 
+   <feature url="features/com.visualbi.selectors.feature_1.0.0.qualifier.jar" id="com.visualbi.selectors.feature" version="1.1.2">
+      <category name="com.sap.ip.bi.zen.sdk"/>
+   </feature>
+   <feature url="features/com.visualbi.utilities.feature_1.0.0.qualifier.jar" id="com.visualbi.utilities.feature" version="1.1.2">
+      <category name="com.sap.ip.bi.zen.sdk"/>
+   </feature>
+   <category-def name="com.sap.ip.bi.zen.sdk" label="com.sap.ip.bi.zen.sdk"/>
+</site>

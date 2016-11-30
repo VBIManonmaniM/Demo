@@ -1,0 +1,7 @@
+GNU LESSER GENERAL PUBLIC LICENSE: http://www.gnu.org/copyleft/lesser.html
+
+Author: Jan Odvarko, http://odvarko.cz
+
+http://jscolor.com
+
+(c) Johannes J. Schmidt, TF, 2011

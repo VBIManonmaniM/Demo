@@ -1,0 +1,3 @@
+Highcharts Drilldown Plugin
+
+© Torstein Honsi, HighSoft (http://highcharts.com). Licensed under MIT.
