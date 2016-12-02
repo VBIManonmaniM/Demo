@@ -5,10 +5,10 @@
   <parent>
     <groupId>com.visualbi.master</groupId>
     <artifactId>parent</artifactId>
-    <version>1.57.1</version>
+    <version>1.59.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>com.visualbi.vbisuite.feature</artifactId>
+  <artifactId>com.visualbi.vbilibrary.feature</artifactId>
   <packaging>eclipse-feature</packaging>
   <build>
     <plugins>

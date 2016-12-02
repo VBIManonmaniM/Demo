@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.visualbi.vbisuite.feature"
+      id="com.visualbi.vbilibrary.feature"
       label="Visual BI Extensions for SAP BusinessObjects Design Studio"
-      version="1.57.1"
+      version="1.59.0"
       provider-name="Visual BI Solutions"
       license-feature="com.sap.rte.sharedinfo.updatesite">
 
@@ -16,7 +16,7 @@
    </copyright>
 	
 	<plugin
-         id="com.visualbi.vbisuite"
+         id="com.visualbi.vbilibrary"
          download-size="0"
          install-size="0"
          version="0.0.0"
