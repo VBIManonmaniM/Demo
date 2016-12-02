@@ -74,10 +74,12 @@
 		<module>VBXMaps/com.visualbi.vbisuite</module>
 		<module>VBXSelectors/com.visualbi.vbisuite</module>
 		<module>VBXUtilities/com.visualbi.vbisuite</module>
+		<module>VBXLibrary/com.visualbi.vbisuite</module>
 		<module>feature/chart</module>
 		<module>feature/map</module> 
 		<module>feature/selector</module>
 		<module>feature/utilities</module>
+		<module>feature/library</module>
 		<module>updatesite</module>
 	</modules>
 </project>

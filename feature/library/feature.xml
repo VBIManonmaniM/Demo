@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.visualbi.vbisuite.feature"
+      label="Visual BI Extensions for SAP BusinessObjects Design Studio"
+      version="1.57.1"
+      provider-name="Visual BI Solutions"
+      license-feature="com.sap.rte.sharedinfo.updatesite">
+
+   <description url="">
+      Library files which supports all the components.
+   </description>
+
+
+   <copyright>
+      All rights reserved. Copyright (2013-2015) By Visual BI Solutions.
+   </copyright>
+	
+	<plugin
+         id="com.visualbi.vbisuite"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
