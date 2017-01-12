@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.visualbi.vbilibrary_1.0.0.qualifier.jar" id="com.visualbi.vbilibrary" version="1.0.0">
+   <feature url="features/com.visualbi.vbilibrary.feature__1.0.0.qualifier.jar" id="com.visualbi.vbilibrary.feature" version="1.0.0">
       <category name="com.sap.ip.bi.zen.sdk"/>
    </feature>
    <category-def name="com.sap.ip.bi.zen.sdk" label="com.sap.ip.bi.zen.sdk"/>
