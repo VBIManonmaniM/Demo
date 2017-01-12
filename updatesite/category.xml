@@ -12,7 +12,7 @@
    <feature url="features/com.visualbi.utilities.feature_1.0.0.qualifier.jar" id="com.visualbi.utilities.feature" version="1.1.2">
       <category name="com.sap.ip.bi.zen.sdk"/>
    </feature>
-   <feature url="features/com.visualbi.vbisuite.feature_1.0.0.qualifier.jar" id="com.visualbi.vbisuite.feature" version="1.1.2">
+   <feature url="features/com.visualbi.vbilibrary.feature_1.0.0.qualifier.jar" id="com.visualbi.vbilibrary.feature" version="1.1.2">
       <category name="com.sap.ip.bi.zen.sdk"/>
    </feature> 
    <category-def name="com.sap.ip.bi.zen.sdk" label="com.sap.ip.bi.zen.sdk"/>
