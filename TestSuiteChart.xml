@@ -1,0 +1,34 @@
+<suite name="VBX Chart Suite"  >
+    <parameter name="testMode"  value="local"/>
+    <parameter name="browserstackEnvironment"  value="iPad Mini"/>
+    <parameter name="needToEmail"  value="true"/>
+    <listeners>
+        <listener class-name="com.visualbi.automation.CustomXMLReporter" />
+    </listeners>
+  <test name="Charts Basic Test">
+
+   <groups>
+    <run>
+     <!--<include name="style" />-->
+     <include name="title" />
+     <include name="subtitle" />
+     <!--<include name="legend" />-->
+     <!--<include name="tooltip" />-->
+     <!--<include name="metadata" />-->
+     <!--<include name="export" />-->
+     <!--<include name="chartevent" />-->
+    </run>
+   </groups>
+    <classes>
+
+
+
+        <class name="com.visualbi.automation.AreaChartTest" />
+        <!--<class name="com.visualbi.automation.LineChartTest" />-->
+        <!--<class name="com.visualbi.automation.PolarChartTest" />-->
+        <!--<class name="com.visualbi.automation.StackedColumnBarChartTest" />-->
+        <!--<class name="com.visualbi.automation.ColumnBarDrilldownChartTest" />-->
+
+    </classes>
+  </test>
+</suite>

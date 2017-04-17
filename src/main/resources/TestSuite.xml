@@ -1,0 +1,40 @@
+<suite name="VBX Chart Suite"  parallel="classes" thread-count="10">
+  <test name="Charts Basic Test">
+    <classes>
+               <class name="com.visualbi.automation.AreaChartTest" />
+                <class name="com.visualbi.automation.LineChartTest" />
+                <class name="com.visualbi.automation.PolarChartTest" />
+                <class name="com.visualbi.automation.StackedColumnBarChartTest" />
+                <class name="com.visualbi.automation.ColumnBarDrilldownChartTest" />
+                <class name="com.visualbi.automation.ColumnBarChartTest" />
+                <class name="com.visualbi.automation.ColumnBarChartNewTest" />
+                <class name="com.visualbi.automation.StackedAreaChartTest" />
+                <class name="com.visualbi.automation.AngularGaugeTest" />
+                <class name="com.visualbi.automation.CombinationChartTest" />
+                <class name="com.visualbi.automation.GroupStackedColumnBarChartTest" />
+                <class name="com.visualbi.automation.SolidGaugeTest" />
+                <class name="com.visualbi.automation.DonutChartTest" />
+                <class name="com.visualbi.automation.SemicircledonutChartTest" />
+                <class name="com.visualbi.automation.FunnelPyramidDrilldownChartTest" />
+                <class name="com.visualbi.automation.FunnelPyramidChartTest" />
+                <class name="com.visualbi.automation.PieChartTest" />
+                <class name="com.visualbi.automation.PieDrilldownChartTest" />
+                <class name="com.visualbi.automation.WaterfallChartTest" />
+                <class name="com.visualbi.automation.BulletChartTest" />
+                <class name="com.visualbi.automation.SuperCombinationChartTest" />
+                <class name="com.visualbi.automation.FixedColumnChartTest" />
+                <class name="com.visualbi.automation.HeatMapChartTest" />
+                <class name="com.visualbi.automation.DualAxesChartTest" />
+                <class name="com.visualbi.automation.ScatterChartTest" />
+                <class name="com.visualbi.automation.MultipleAxesChartTest" />
+                <class name="com.visualbi.automation.BubbleChartTest" />
+                <class name="com.visualbi.automation.ChartContainerTest" />
+                <class name="com.visualbi.automation.BoxPlotChartTest" />
+                <class name="com.visualbi.automation.MarimekkoChartTest" />
+                <class name="com.visualbi.automation.RadarChartTest" />
+                <class name="com.visualbi.automation.TreeMapTest" />
+                <class name="com.visualbi.automation.TreeMapDrilldownTest" />
+      
+    </classes>
+  </test>
+</suite>
