@@ -133,6 +133,17 @@ public class Helpers {
 
             }
         });
+        handlebar.registerHelper("error_type", new Helper<String>() {
+            @Override
+            public CharSequence apply(String arg0, Options options) throws IOException {
+
+                if(arg0==null)
+                    return "Passed";
+                return arg0.substring(arg0.lastIndexOf(".")+1);
+
+
+            }
+        });
         handlebar.registerHelper("if_critical", new Helper<Integer>() {
             @Override
             public CharSequence apply(Integer arg0, Options options) throws IOException {

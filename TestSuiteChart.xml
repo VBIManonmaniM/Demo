@@ -1,7 +1,7 @@
 <suite name="VBX Chart Suite"  >
     <parameter name="testMode"  value="local"/>
-    <parameter name="browserstackEnvironment"  value="iPad Mini"/>
-    <parameter name="needToEmail"  value="true"/>
+    <parameter name="browserstackEnvironment"  value="Chrome"/>
+    <parameter name="needToEmail"  value="false"/>
     <listeners>
         <listener class-name="com.visualbi.automation.CustomXMLReporter" />
     </listeners>

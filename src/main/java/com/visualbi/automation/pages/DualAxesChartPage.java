@@ -23,4 +23,8 @@ import com.visualbi.automation.pages.base.HighchartsPage;
 
   return $(".highcharts-plot-line-label").get(0).as(CustomFluentWebElementComponent.class);
  }
+ public CustomFluentWebElementComponent yAxisPlotBand(){
+  // return yAxisPlotBand.as(CustomFluentWebElementComponent.class);
+  return $(".highcharts-plot-bands-0 .highcharts-plot-band").get(0).as(CustomFluentWebElementComponent.class);
+ }
 }

@@ -24,6 +24,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogType;
@@ -277,11 +278,15 @@ public class BaseTest extends FluentTestNg {
          }
          else {
              System.setProperty("webdriver.chrome.driver",VBIConfig.CHROME_DRIVER);
+             System.setProperty("webdriver.ie.driver", VBIConfig.IE_DRIVER);
              DesiredCapabilities capabilities = DesiredCapabilities.chrome();
              LoggingPreferences logPrefs = new LoggingPreferences();
              logPrefs.enable(LogType.BROWSER, Level.ALL);
              capabilities.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
+             if(VBIConfig.browserstackEnvironment.contains("IE"))
+                 return new InternetExplorerDriver();
              return new ChromeDriver(capabilities);
+
          }
 
     }
@@ -298,7 +303,7 @@ public class BaseTest extends FluentTestNg {
            takeScreenShot(fileNameFormat+".png");
             ApplicationExporter applicationExporter = new ApplicationExporter(result.getName(),result.getParameters()[1].toString(),VBIConfig.dsVersion);
                 applicationExporter.exportBiapp();
-                if(VBIConfig.testMode.equals("local")) {
+                if(VBIConfig.testMode.equals("local") && (!VBIConfig.browserstackEnvironment.contains("IE"))) {
                     LogEntries logEntries = getDriver().manage().logs().get(LogType.BROWSER);
                     BrowserLog.writeLogToFile(logEntries, fileNameFormat + "_log.txt", VBIConfig.BROWSER_LOG_PATH);
                 }

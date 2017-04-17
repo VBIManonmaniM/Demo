@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
  */
 public class BiappXStreamWriter implements  IBiappWriter {
     public void createBIAppFile(String filePath, com.visualbi.automation.xmlutils.models.Component component, String sdkName, String sdkVersion) {
-        String[] excludeDs=new String[]{"COLUMNBARDRILLDOWNCHART","FUNNELPYRAMIDCHART","PIEDRILLDOWNCHART","TREEMAPDRILLDOWN"};
+        String[] excludeDs=new String[]{"COLUMNBARDRILLDOWNCHART","FUNNELPYRAMIDDRILLDOWNCHART","PIEDRILLDOWNCHART","TREEMAPDRILLDOWN"};
        XStream xstream = new XStream(new CustomizedDomDriver());
         xstream.processAnnotations(BiappRoot.class);
         BiappRoot biapp=new BiappRoot(sdkName,sdkVersion);

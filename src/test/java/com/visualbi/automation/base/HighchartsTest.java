@@ -116,7 +116,10 @@ public class HighchartsTest extends BaseTest {
         assertThat(page.xAxisSecondLabel().getFontSize()).isEqualTo(propertyMap.get(XAxis.FONTSIZE).getExpectedValue());
         assertThat(page.xAxisSecondLabel().getTransform()).contains("rotate("+propertyMap.get(XAxis.ROTATION).getValue());
         assertThat(page.xAxisFirstLabel().getText()).isEqualTo("");
-        assertThat(page.xAxisLastLabel().getText()).isEqualTo("");
+        if(!(page.xAxisFirstLabel().getText().equals("")))
+            throw new ComparisonFailure("Xaxis First Label not disabled","No First Label","First Label Found");
+        if(!(page.xAxisLastLabel().getText().equals("")))
+            throw new ComparisonFailure("Xaxis Last Label not disabled","No Last Label","Last Label Found");
     }
     public void testYAxisLabelStyle(Map<String, Property> propertyMap, HighchartsPage page){
         String regex="^\\"+propertyMap.get(YAxis.PREFIX).getValue()+".+\\"+propertyMap.get(YAxis.SUFFIX).getValue()+"$";
@@ -150,7 +153,7 @@ public class HighchartsTest extends BaseTest {
     }
 
     public void testXAxisPlotBandLabel(Map<String, Property> propertyMap, HighchartsPage page){
-        assertThat(page.plotBandLabel().getText()).isEqualTo(propertyMap.get(XAxisPlotBandLabel.TEXT).getValue());
+        assertThat(page.plotBandLabel().getValue()).isEqualTo(propertyMap.get(XAxisPlotBandLabel.TEXT).getValue());
          assertThat(page.plotBandLabel().getColor()).isEqualTo(propertyMap.get(XAxisPlotBandLabel.COLOR).getValue());
         assertThat(page.plotBandLabel().getFontFamily()).isEqualTo(propertyMap.get(XAxisPlotBandLabel.FONTFAMILY).getValue());
         assertThat(page.plotBandLabel().getFontWeight()).isEqualTo(propertyMap.get(XAxisPlotBandLabel.FONTWEIGHT).getValue());
