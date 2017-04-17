@@ -1,0 +1,46 @@
+{
+"server": "hub-cloud.browserstack.com",
+  "user": "ingohilgefort1",
+  "key": "4jgboFwyqxJ8UfZTzqdf",
+
+  "capabilities": {
+    "build": "testng-browserstack",
+    "name": "local_test",
+    "browserstack.debug": true,
+    "browserstack.local": true
+  },
+
+  "environments": {
+    "Windows 7 IE 8": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "IE",
+      "browser_version": "8.0",
+      "resolution": "1024x768"
+    },
+    "iPad 4th": {
+      "browserName": "iPad",
+      "platform": "MAC",
+      "device": "iPad 4th"
+    },
+    "Windows 8 IE 10": {
+      "os": "Windows",
+      "os_version": "8",
+      "browser": "IE",
+      "browser_version": "10.0",
+      "resolution": "1024x768"
+    },
+    "Android Galaxy S5": {
+      "browserName": "android",
+      "platform": "ANDROID",
+      "device": "Samsung Galaxy S5"
+    },
+
+      "iPhone 6S Plus": {
+        "browserName": "iPhone",
+        "platform": "MAC",
+        "device": "iPhone 6S Plus"
+      }
+
+  }
+}

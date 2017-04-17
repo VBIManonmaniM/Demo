@@ -1,0 +1,24 @@
+<suite name="VBX Chart Suite"   parallel="classes" thread-count="20">
+    <listeners>
+        <listener class-name="com.visualbi.automation.CustomXMLReporter" />
+    </listeners>
+  <test name="Charts Basic Test">
+      <parameter name="buildno"  value="DSX1.25"/>
+   <groups>
+    <run>
+     <!--<include name="style" />-->
+     <include name="title" />
+     <include name="subtitle" />
+     <!--<include name="legend" />-->
+     <!--<include name="tooltip" />-->
+     <!--<include name="metadata" />-->
+     <!--<include name="export" />-->
+    </run>
+   </groups>
+    <classes>
+        <class name="com.visualbi.automation.AngularGaugeTest" />
+        <!--<class name="com.visualbi.automation.SolidGaugeTest" />-->
+
+    </classes>
+  </test>
+</suite>

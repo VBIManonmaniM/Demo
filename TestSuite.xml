@@ -1,0 +1,62 @@
+<suite name="VBX Chart Suite" parallel="classes" thread-count="20">
+ <parameter name="testMode"  value="local"/>
+ <parameter name="needToEmail"  value="false"/>
+ <parameter name="browserstackEnvironment"  value="Chrome Windows"/>
+ <listeners>
+  <listener class-name="com.visualbi.automation.CustomXMLReporter" />
+ </listeners>
+
+ <test name="Charts Basic Test">
+
+   <groups>
+    <run>
+     <include name="style" />
+     <include name="title" />
+     <include name="subtitle" />
+     <include name="legend" />
+     <include name="tooltip" />
+     <include name="metadata" />
+     <include name="export" />
+     <include name="chartevent" />
+     <!--<include name="ztlscript" />-->
+     <include name="numberformat" />
+     <include name="yaxis" />
+     <include name="xaxis" />
+    </run>
+   </groups>
+    <classes>
+               <class name="com.visualbi.automation.AreaChartTest" />
+                <class name="com.visualbi.automation.LineChartTest" />
+                <class name="com.visualbi.automation.PolarChartTest" />
+                <class name="com.visualbi.automation.StackedColumnBarChartTest" />
+                <class name="com.visualbi.automation.ColumnBarDrilldownChartTest" />
+                <class name="com.visualbi.automation.ColumnBarChartTest" />
+                <class name="com.visualbi.automation.ColumnBarChartNewTest" />
+                <class name="com.visualbi.automation.StackedAreaChartTest" />
+                <class name="com.visualbi.automation.AngularGaugeTest" />
+                <class name="com.visualbi.automation.CombinationChartTest" />
+                <class name="com.visualbi.automation.GroupStackedColumnBarChartTest" />
+                <class name="com.visualbi.automation.SolidGaugeTest" />
+                <class name="com.visualbi.automation.DonutChartTest" />
+                <class name="com.visualbi.automation.SemicircledonutChartTest" />
+                <class name="com.visualbi.automation.FunnelPyramidDrilldownChartTest" />
+                <class name="com.visualbi.automation.FunnelPyramidChartTest" />
+                <class name="com.visualbi.automation.PieChartTest" />
+                <class name="com.visualbi.automation.PieDrilldownChartTest" />
+                <class name="com.visualbi.automation.WaterfallChartTest" />
+                <class name="com.visualbi.automation.BulletChartTest" />
+                <class name="com.visualbi.automation.SuperCombinationChartTest" />
+                <class name="com.visualbi.automation.FixedColumnChartTest" />
+                <class name="com.visualbi.automation.HeatMapChartTest" />
+                <class name="com.visualbi.automation.DualAxesChartTest" />
+                <class name="com.visualbi.automation.ScatterChartTest" />
+                <class name="com.visualbi.automation.MultipleAxesChartTest" />
+                <class name="com.visualbi.automation.BubbleChartTest" />
+                <class name="com.visualbi.automation.BoxPlotChartTest" />
+                <class name="com.visualbi.automation.MarimekkoChartTest" />
+                <class name="com.visualbi.automation.RadarChartTest" />
+                <class name="com.visualbi.automation.TreeMapTest" />
+                <class name="com.visualbi.automation.TreeMapDrilldownTest" />
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test case report</title>
+    <style>{{> testng-reporting/style}}</style>
+  </head>
+  <body>
+  {{> testng-reporting/menu}}
+  {{> testng-reporting/requiredScripts}}
+  <script src="../js/build_data.js"></script>
+  <script src="../js/propertyBank.js"></script>
+  <script>
+      $( document ).ready(function() {
+        if($('.list-group-item-danger').length!=0)
+       $('.list-group-item-success2').hide();
+   $('.parameter-json').each(function(){
+       var data=$(this).html().replace(/\r?\n|\r| /g, '').replace(/\\/g, "\\\\").replace('"}]',']').replace(/}","{/g,"},{").replace('["{','[{');
+  console.log(data);
+var parameters
+     try{
+     parameters =JSON.parse(data);
+     }
+     catch(err)
+     {
+     parameters={};
+     }
+    var paramTable=$('<table class="table table-bordered table-hover "></table>');
+    var paramTableHead=$("<thead><tr><th>Property</th><th>Input</th></tr></thead>");
+    var paramTableBody=$("<tbody></tbody>")
+    for(parameter of parameters)
+    {
+
+        paramTableBody.append("<tr><td>"+PropertyBank()[parameter.name].title+"</td><td>"+parameter.value+"</td></tr>");
+    }
+    paramTable.append(paramTableHead);
+    paramTable.append(paramTableBody);
+    $(this).empty();
+    $(this).append(paramTable)
+   });
+
+
+});
+  </script>
+  <script>
+
+      function showModal(element){
+ $(element).parent().find(".modal").show();
+      }
+ function closeModal(){
+
+ $(".modal").hide();
+      }
+$(document).keyup(function(e) {
+
+  if (e.keyCode === 27) closeModal();   // esc
+});
+
+
+   </script>
+    <div id="feature-container" class="panel panel-primary">
+      <div class="panel-heading">
+        <input checked
+          id="toggle-collapsed"
+          data-size="mini"
+          data-toggle="toggle"
+          data-on="<span title='Click to expand all test cases'>Expand</span>"
+          data-off="<span title='Click to collapse all test cases'>Collapse</span>"
+          type="checkbox"
+          data-style="slow">
+
+          <input  {{#if_passed overallStatus}}{{/if_passed}}
+          id="toggle-collapsed2"
+          data-size="mini"
+          data-toggle="toggle"
+          data-on="<span title='Click to show all config steps'>Only failure</span>"
+          data-off="<span title='Click to hide all config steps'>Show all</span>"
+          type="checkbox"
+          data-style="slow"
+          data-width="100">
+
+          <span class="badge badge-success pull-right">{{#date totalDuration}}{{/date}}</span>
+        <h4 class="panel-title">
+          <p>
+              {{#format-testmethod name}}{{/format-testmethod}}
+          </p>
+        </h4>
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          {{#each testMethods}}
+          <div class="{{#is-config isConfig}}{{/is-config}}">
+            <li data-toggle="tooltip" data-placement="top" title="{{#resolve-tooltip status}}{{/resolve-tooltip}}"
+              class="scenario
+                list-group-item 
+                list-group-item-{{#result-color status}}{{/result-color}}">
+              <span class="forDrop" data-target="#{{uniqueID}}" data-toggle="collapse">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+
+                  {{params.paramsList.1.value}}
+              </span>
+              <span class="label label-{{#result-color status}}{{/result-color}} pull-right">
+                {{#date durationMs}}{{/date}}
+              </span>
+                {{#unless isConfig }}
+                    {{#if_eq status "FAIL"}}
+                    <i class="glyphicon glyphicon-camera screeenshot-{{status}}" onclick="showModal(this)"></i>
+                    <a class="glyphicon glyphicon-download-alt screeenshot-{{status}}" href="../exports/{{#filename params.paramsList.1.value name}}{{/filename}}.zip"></a>
+                    <a class="glyphicon glyphicon-file screeenshot-{{status}}" href="../browser-logs/{{#filename params.paramsList.1.value name}}{{/filename}}_log.txt"></a>
+
+
+                    <!-- The Modal -->
+                    <div  class="modal" onclick="closeModal()">
+
+                        <!-- The Close Button -->
+                        <span class="close" onclick="closeModal()">&times;</span>
+
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01" src="../screenshots/{{#filename params.paramsList.1.value name}}{{/filename}}.png" alt="Failure Screenshot"  >
+
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption">Screenshot</div>
+                    </div>
+                        {{/if_eq}}
+                {{/unless}}
+              <div id="{{uniqueID}}" class="collapseMagic collapse">
+                    {{#unless isConfig }}
+                      <ul class="steps list-group params">
+                      <li class="list-group-item
+                                    list-group-item-{{#result-color status}}{{/result-color}}">
+
+
+                                          <div>
+
+                                              <div class="panel-heading">Parameters
+                                                  <div class="parameter-json">{{#convert-param params.paramsList.0.value}}{{/convert-param}}</div></div>
+                                          </div>
+
+
+
+                      </li>
+                      </ul>
+                  {{/unless}}
+                {{#if exception}}
+                <ul class="steps list-group">
+                  <li class="list-group-item
+                        list-group-item-{{#result-color status}}{{/result-color}}">
+                    <div>
+                      <span>Exception:</span>
+                      <pre>{{exception.clazz}}</pre>
+                    </div>
+                    {{#if exception.message}}
+                      <span>Exception message:</span>
+                      <pre>{{exception.message.value}}</pre>
+                    {{/if}}
+                    {{#if exception.fullStacktrace}}
+                      <span>Exception full stacktrace:</span>
+                      <pre>{{exception.fullStacktrace.value}}</pre>
+                    {{/if}}
+                  </li>
+                </ul>
+                {{/if}}
+                {{#if  reporterOutput.lines}}
+                <ul class="steps list-group">
+                  <li class="list-group-item
+                        list-group-item-{{#result-color status}}{{/result-color}}">
+                    <span>Reporter output log</span>
+                      <pre>{{#each reporterOutput.lines}}{{value}}<br />{{/each}}</pre>
+                    </li>
+                  </ul>
+                {{/if}}
+                {{#if error}}
+                <ul class="steps list-group">
+                  <li class="list-group-item
+                        list-group-item-{{#result-color overallStatus}}{{/result-color}}">
+                    <div>
+                      <span>Message:</span>
+                      <pre>{{error.value}}</pre>
+                    </div>
+                    {{#if systemOut}}
+                      <span>System-out:</span>
+                      <pre>{{systemOut}}</pre>
+                    {{/if}}
+                    {{#if systemErr}}
+                      <span>System-Err:</span>
+                      <pre>{{systemErr}}</pre>
+                    {{/if}}
+                  </li>
+                </ul>
+                {{/if}}
+              </div>
+            </li>
+          </div>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <a href="#" class="back-to-top" style="display: none;">
+      <i title="Scroll UP" class="glyphicon glyphicon-triangle-top"></i>
+    </a>
+
+    {{> testng-reporting/scrollTopScript}}
+    {{> testng-reporting/footer}}
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<suite name="VBX Chart Suite"  parallel="classes" thread-count="10">
+  <test name="Charts Basic Test">
+    <classes>
+     #foreach( $component in $components )
+      #set ($TestName = "com.visualbi.automation."+$component+"Test")
+          <class name="$TestName" />
+      #end
+
+    </classes>
+  </test>
+</suite>

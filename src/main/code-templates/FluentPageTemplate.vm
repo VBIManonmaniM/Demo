@@ -1,0 +1,12 @@
+package com.visualbi.automation.pages;
+
+/**
+ * Created by Code Generation Tool on $date.
+ */
+import com.visualbi.automation.base.HighchartsTest;
+
+ #set ($ComponentPage = $Component+"Page")
+public class $ComponentPage extends  HighchartsPage {
+
+
+}

@@ -1,0 +1,6712 @@
+{
+   "CHARTSELECTOR": {
+      "DSXSetChartType": {
+         "property": "loadingenable",
+         "paramtype": "String"
+      }
+   },
+   "CHARTCONTAINER": {
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "bulletdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "bulletthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetChartContainerType": {
+         "property": "chartcontainertypenative",
+         "paramtype": "String"
+      },
+      "DSXSetControlChartTypeBySelector": {
+         "property": "controlcharttypebyselector",
+         "paramtype": "boolean"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      },
+      "DSXSetchartWidth": {
+         "property": "chartwidth",
+         "paramtype": "int"
+      },
+      "DSXSetOnDemandScript": {
+         "property": "ztlvalue",
+         "paramtype": ""
+      }
+   },
+   "CUSTOMDATASOURCE": {
+      "DSXSetSheetName": {
+         "property": "sheetname",
+         "paramtype": "String"
+      },
+      "DSXSetOnDemandScript": {
+         "property": "isScriptingEnabled",
+         "paramtype": ""
+      }
+   },
+   "FIXEDCOLUMNCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "DUALAXESCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": [
+         {
+            "property": "yaxislabelenabled",
+            "paramtype": "boolean"
+         },
+         {
+            "property": "yaxislabelenabled1",
+            "paramtype": "boolean"
+         }
+      ],
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": [
+         {
+            "property": "yaxistitleenabled",
+            "paramtype": "boolean"
+         },
+         {
+            "property": "yaxistitleenabled1",
+            "paramtype": "boolean"
+         }
+      ],
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYaxis2Maximum": {
+         "property": "yaxismax1",
+         "paramtype": "int"
+      },
+      "DSXSetYaxis2Minimum": {
+         "property": "yaxismin1",
+         "paramtype": "int"
+      },
+      "DSXSetYAxis2LabelPrefix": {
+         "property": "yaxislabelprefix1",
+         "paramtype": "String"
+      },
+      "DSXSetYAxis2LabelSuffix": {
+         "property": "yaxislabelsuffix1",
+         "paramtype": "String"
+      },
+      "DSXSetYAxis2TitleText": {
+         "property": "yaxistitletext1",
+         "paramtype": "String"
+      },
+      "DSXSetYAxis2PlotBandEnabled": {
+         "property": "yaxisplotbandenabled1",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxis2PlotBandFrom": {
+         "property": "yaxisplotbandfrom1",
+         "paramtype": "float"
+      },
+      "DSXSetYAxis2PlotBandTo": {
+         "property": "yaxisplotbandto1",
+         "paramtype": "float"
+      },
+      "DSXSetYAxis2PlotLineEnabled": {
+         "property": "yaxisplotlineenabled1",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxis2PlotLineValue": {
+         "property": "yaxisplotlinevalue1",
+         "paramtype": "int"
+      },
+      "DSXSetYAxis2PlotBandColor": {
+         "property": "yaxisplotbandcolor1",
+         "paramtype": "String"
+      },
+      "DSXSetYAxis2PlotLineColor": {
+         "property": "yaxisplotlinecolor1",
+         "paramtype": "String"
+      },
+      "DSXSetChartType": {
+         "property": "loadingenable",
+         "paramtype": "String"
+      },
+      "DSXSetChartOrientation": {
+         "property": "chartorientation",
+         "paramtype": "String"
+      }
+   },
+   "MULTIPLEAXESCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetChartOrientation": {
+         "property": "chartorientation",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "KPITILE": {
+      "DSXSetTitleText": {
+         "property": "kpititle",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleText": {
+         "property": "kpisubtitle",
+         "paramtype": "String"
+      },
+      "DSXSetFooterText": {
+         "property": "kpifooter",
+         "paramtype": "String"
+      },
+      "DSXSetIconURL": {
+         "property": "kpiicon",
+         "paramtype": "String"
+      },
+      "DSXSetChartBottomMargin": {
+         "property": "chartmarginbottom",
+         "paramtype": "String"
+      },
+      "DSXSetChartLeftMargin": {
+         "property": "chartmarginleft",
+         "paramtype": "String"
+      },
+      "DSXSetChartRightMargin": {
+         "property": "chartmarginright",
+         "paramtype": "String"
+      },
+      "DSXSetChartTopMargin": {
+         "property": "chartmargintop",
+         "paramtype": "String"
+      },
+      "DSXSetChartBottomPadding": {
+         "property": "chartpaddingbottom",
+         "paramtype": "String"
+      },
+      "DSXSetChartLeftPadding": {
+         "property": "chartpaddingleft",
+         "paramtype": "String"
+      },
+      "DSXSetChartRightPadding": {
+         "property": "chartpaddingright",
+         "paramtype": "String"
+      },
+      "DSXSetChartTopPadding": {
+         "property": "chartpaddingtop",
+         "paramtype": "String"
+      },
+      "DSXSetChartPanKey": {
+         "property": "chartpankey",
+         "paramtype": "String"
+      },
+      "DSXSetChartPanning": {
+         "property": "chartpanning",
+         "paramtype": "boolean"
+      },
+      "DSXSetChartPinchType": {
+         "property": "chartpinchtype",
+         "paramtype": "String"
+      },
+      "DSXSetPlotShadow": {
+         "property": "plotshadow",
+         "paramtype": "boolean"
+      },
+      "DSXSetChartZoomType": {
+         "property": "chartzoomtype",
+         "paramtype": "String"
+      },
+      "DSXSetHorizontalZoomButtonAlign": {
+         "property": "zoombuttonalign",
+         "paramtype": "String"
+      },
+      "DSXSetVerticalZoomButtonAlign": {
+         "property": "zoombuttonverticalalign",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetChartBackgroundColor": {
+         "property": "plotbackgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetChartBorderColor": {
+         "property": "plotbordercolor",
+         "paramtype": "String"
+      },
+      "DSXSetChartBorderWidth": {
+         "property": "plotborderwidth",
+         "paramtype": "int"
+      },
+      "DSXSetZoomButtonBackgroundColor": {
+         "property": "resetzoombuttonbackgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetZoomButtonTextColor": {
+         "property": "resetzoombuttontextcolor",
+         "paramtype": "String"
+      },
+      "DSXSetZoomButtonRadius": {
+         "property": "resetzoombuttonradius",
+         "paramtype": "float"
+      },
+      "DSXSetZoomButtonHoverBackgroundColor": {
+         "property": "resetzoombuttonhoverbackgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetZoomButtonHoverTextColor": {
+         "property": "resetzoombuttonhovertextcolor",
+         "paramtype": "String"
+      },
+      "DSXSetZoomSelectionAreaBackgroundColor": {
+         "property": "zoomselectionareabackgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetDatalabelTextColor": {
+         "property": "datalabeltextcolor",
+         "paramtype": "String"
+      },
+      "DSXSetDatalabelFontWeight": {
+         "property": "datalabelfontweight",
+         "paramtype": "String"
+      },
+      "DSXSetDatalabelFontSize": {
+         "property": "datalabelfontsize",
+         "paramtype": "float"
+      },
+      "DSXSetDatalabelFontFamily": {
+         "property": "datalabelfontfamily",
+         "paramtype": "String"
+      },
+      "DSXSetKPIBorderStyle": {
+         "property": "kpiborderstyle",
+         "paramtype": "String"
+      },
+      "DSXSetKPIBorderWidth": {
+         "property": "kpiborderwidth",
+         "paramtype": "int"
+      },
+      "DSXSetKPIBorderColor": {
+         "property": "kpibordercolor",
+         "paramtype": "String"
+      },
+      "DSXSetKPIBorderRadius": {
+         "property": "kpiborderradius",
+         "paramtype": "float"
+      },
+      "DSXSetKPIBackgroundColor": {
+         "property": "kpibackgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleFontWeight": {
+         "property": "subtitlefontweight",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleFontFamily": {
+         "property": "subtitlefontfamily",
+         "paramtype": "String"
+      },
+      "DSXSetTitleFontWeight": {
+         "property": "titlefontweight",
+         "paramtype": "String"
+      },
+      "DSXSetTitleFontFamily": {
+         "property": "titlefontfamily",
+         "paramtype": "String"
+      },
+      "DSXSetFooterFontWeight": {
+         "property": "footerfontweight",
+         "paramtype": "String"
+      },
+      "DSXSetFooterFontFamily": {
+         "property": "footerfontfamily",
+         "paramtype": "String"
+      },
+      "DSXSetDataFontWeight": {
+         "property": "kpidatafontweight",
+         "paramtype": "String"
+      },
+      "DSXSetDataFontFamily": {
+         "property": "kpidatafontfamily",
+         "paramtype": "String"
+      },
+      "DSXSetSuffixFontWeight": {
+         "property": "symbolfontweight",
+         "paramtype": "String"
+      },
+      "DSXSetSuffixFontFamily": {
+         "property": "symbolfontfamily",
+         "paramtype": "String"
+      },
+      "DSXSetTitleAlign": {
+         "property": "titlealign",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleAlign": {
+         "property": "subtitlealign",
+         "paramtype": "String"
+      },
+      "DSXSetFooterAlign": {
+         "property": "footeralign",
+         "paramtype": "String"
+      },
+      "DSXSetDataAlign": {
+         "property": "kpidataalign",
+         "paramtype": "String"
+      },
+      "DSXSetSuffixAlign": {
+         "property": "symbolalign",
+         "paramtype": "String"
+      },
+      "DSXSetSuffixFontSize": {
+         "property": "symbolfontsize",
+         "paramtype": "float"
+      },
+      "DSXSetDataFontSize": {
+         "property": "kpidatafontsize",
+         "paramtype": "float"
+      },
+      "DSXSetFooterFontSize": {
+         "property": "footerfontsize",
+         "paramtype": "float"
+      },
+      "DSXSetTitleFontSize": {
+         "property": "titlefontsize",
+         "paramtype": "float"
+      },
+      "DSXSetSubTitleFontSize": {
+         "property": "subtitlefontsize",
+         "paramtype": "float"
+      },
+      "DSXSetSuffixColor": {
+         "property": "symbolcolor",
+         "paramtype": "String"
+      },
+      "DSXSetFooterColor": {
+         "property": "footercolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataColor": {
+         "property": "kpidatacolor",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleColor": {
+         "property": "subtitlecolor",
+         "paramtype": "String"
+      },
+      "DSXSetTitleColor": {
+         "property": "titlecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "kpidecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "kpithousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetNoOfDecimals": {
+         "property": "noofdecimals",
+         "paramtype": "String"
+      },
+      "DSXSetDataValue": {
+         "property": "datavalue",
+         "paramtype": "String"
+      }
+   },
+   "GRIDBOX": {
+      "DSXSetGridData": {
+         "property": "griddatakey",
+         "paramtype": "String"
+      }
+   },
+   "MARIMEKKOCHART": {
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetxaxisboxlabelenabled": {
+         "property": "xaxisboxlabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "HTMLBOX": {
+      "DSXSethtmlcode": {
+         "property": "htmlcode",
+         "paramtype": "String"
+      }
+   },
+   "SCRIPTBOX": {
+      "DSXSetCode": {
+         "property": "txt",
+         "paramtype": "String"
+      }
+   },
+   "LOCATIONANALYZER": {
+      "DSXSetVisible": {
+         "property": "isHideShowLayer",
+         "paramtype": "boolean"
+      },
+      "DSXSetZoomLevel": {
+         "property": "isHideShowLayer",
+         "paramtype": "int"
+      },
+      "DSXSetInitialLatitude": {
+         "property": "mapZoomLevel",
+         "paramtype": "String"
+      },
+      "DSXSetInitialLongitude": {
+         "property": "setInitialLatitude",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "lyrName",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "LINECHART": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "PROGRESSBAR": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetMaximumValue": {
+         "property": "maximumrange",
+         "paramtype": "String"
+      },
+      "DSXSetDataValue": {
+         "property": "datavalue",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataValueFloat": {
+         "property": "datavalue",
+         "paramtype": "float"
+      },
+      "DSXSetMaximumValueFloat": {
+         "property": "maximumrange",
+         "paramtype": "float"
+      }
+   },
+   "STACKEDCOLUMNBARCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "COLUMNBARCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "COLUMNBARDRILLDOWNCHART": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "bulletdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "bulletthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetchartWidth": {
+         "property": "chartwidth",
+         "paramtype": "int"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "PIECHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "AREACHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "GROUPSTACKEDCOLUMNBARCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "BULLETCHART": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDecimalSeparator": [
+         {
+            "property": "bulletdecimalseparator",
+            "paramtype": "String"
+         },
+         {
+            "property": "bulletdecimalseperator",
+            "paramtype": "String"
+         }
+      ],
+      "DSXSetThousandSeparator": [
+         {
+            "property": "bulletthousandseparator",
+            "paramtype": "String"
+         },
+         {
+            "property": "bulletthousandseperator",
+            "paramtype": "String"
+         }
+      ],
+      "DSXsetYaxismin": {
+         "property": "loadingenable",
+         "paramtype": "float"
+      },
+      "DSXSetStackedValues": {
+         "property": "stackedvalues",
+         "paramtype": "boolean"
+      },
+      "DSXSetIndividualScale": {
+         "property": "individualscale",
+         "paramtype": "boolean"
+      },
+      "DSXsetQualitativeRange": {
+         "property": "setQualitativeRangeCalled",
+         "paramtype": "String"
+      },
+      "DSXsetQualitativeRangeConfiguration": {
+         "property": "setQualitativeRangeCalled",
+         "paramtype": "String"
+      }
+   },
+   "STACKEDAREACHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "HCMAP": {
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": [
+         {
+            "property": "tooltipvaluesuffix",
+            "paramtype": "String"
+         },
+         {
+            "property": "tooltipthousandseparator",
+            "paramtype": "String"
+         },
+         {
+            "property": "tooltipdecimalseparator",
+            "paramtype": "String"
+         }
+      ],
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      }
+   },
+   "NUMBERCOUNTER": {
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDataValue": {
+         "property": "counterdatavalue",
+         "paramtype": "String"
+      },
+      "DSXSetMaxValue": {
+         "property": "totalvalue",
+         "paramtype": "String"
+      },
+      "DSXSetType": {
+         "property": "countertype",
+         "paramtype": "String"
+      },
+      "DSXSetDataValueColor": {
+         "property": "counterfontcolor",
+         "paramtype": "String"
+      },
+      "DSXSetTextColor": {
+         "property": "textcolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataIntValue": {
+         "property": "counterdatavalue",
+         "paramtype": "int"
+      },
+      "DSXSetMaxIntValue": {
+         "property": "totalvalue",
+         "paramtype": "int"
+      }
+   },
+   "CIRCULARCOUNTER": {
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDataValue": {
+         "property": "counterdatavalue",
+         "paramtype": "String"
+      },
+      "DSXSetMaxValue": {
+         "property": "circountertotalvalue",
+         "paramtype": "String"
+      },
+      "DSXSetType": {
+         "property": "countertype",
+         "paramtype": "String"
+      },
+      "DSXSetTotalValueFillColor": {
+         "property": "totalvaluecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataValueFillColor": {
+         "property": "cirdatavaluecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataValueColor": {
+         "property": "counterfontcolor",
+         "paramtype": "String"
+      },
+      "DSXSetPlotBackgroundColor": {
+         "property": "counterbackgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "counterprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "countersuffix",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "kpithousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "kpidecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultCellSelection"
+      },
+      "DSXSetDataIntValue": {
+         "property": "counterdatavalue",
+         "paramtype": "int"
+      },
+      "DSXSetMaxIntValue": {
+         "property": "circountertotalvalue",
+         "paramtype": "int"
+      }
+   },
+   "FUNNELPYRAMIDCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "DONUTCHART": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "SEMICIRCLEDONUTCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "COMBINATIONCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "BUBBLECHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximumAsString": {
+         "property": "yaxismax",
+         "paramtype": "String"
+      },
+      "DSXSetYaxisMinimumAsString": {
+         "property": "yaxismin",
+         "paramtype": "String"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      }
+   },
+   "SCATTERCHART": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": [
+         {
+            "property": "tooltipvalueprefix",
+            "paramtype": "String"
+         },
+         {
+            "property": "xtooltipvalueprefix",
+            "paramtype": "String"
+         }
+      ],
+      "DSXSetTooltipValueSuffix": [
+         {
+            "property": "tooltipvaluesuffix",
+            "paramtype": "String"
+         },
+         {
+            "property": "xtooltipvaluesuffix",
+            "paramtype": "String"
+         }
+      ],
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximumAsString": {
+         "property": "yaxismax",
+         "paramtype": "String"
+      },
+      "DSXSetYaxisMinimumAsString": {
+         "property": "yaxismin",
+         "paramtype": "String"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      }
+   },
+   "SUPERCOMBINATIONCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "ANGULARGAUGE": {
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetStartRange": {
+         "property": "startrange",
+         "paramtype": "String"
+      },
+      "DSXSetIntermediateRange": {
+         "property": "intermediaterange",
+         "paramtype": "String"
+      },
+      "DSXSetEndRange": {
+         "property": "endrange",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisMajorTickInterval": {
+         "property": "yaxistickinterval",
+         "paramtype": "String"
+      },
+      "DSXSetDataValue": {
+         "property": "datavalue",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetValueAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetValueAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisMinorTickInterval": {
+         "property": "yaxisminortickinterval",
+         "paramtype": "String"
+      },
+      "DSXSetDataValueFloat": {
+         "property": "datavalue",
+         "paramtype": "float"
+      }
+   },
+   "FUNNELPYRAMIDDRILLDOWNCHART": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "bulletdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "bulletthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "SOLIDGAUGE": {
+      "DSXSetMinimumValue": {
+         "property": "minimumvalue",
+         "paramtype": "String"
+      },
+      "DSXSetMaximumValue": {
+         "property": "maximumvalue",
+         "paramtype": "String"
+      },
+      "DSXSetDataValue": {
+         "property": "datavalue",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisMajorTickInterval": {
+         "property": "yaxistickinterval",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetValueAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetValueAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetValueAxisMinorTickInterval": {
+         "property": "yaxisminortickinterval",
+         "paramtype": "int"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataSeriesName": {
+         "property": "dataseriesname",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "ADVANCEDLABEL": {
+      "DSXSetText": {
+         "property": "text",
+         "paramtype": "String"
+      },
+      "DSXSetEditable": {
+         "property": "texteditable",
+         "paramtype": "boolean"
+      }
+   },
+   "SPARKLINETABLECHART": {
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetMinimumWidth": {
+         "property": "minimumwidthtable",
+         "paramtype": "int"
+      },
+      "DSXSetHeaderColor": {
+         "property": "headercolor",
+         "paramtype": "String"
+      },
+      "DSXSetOddRowColor": {
+         "property": "rowcolor",
+         "paramtype": "String"
+      },
+      "DSXSetEvenRowColor": {
+         "property": "colcolor",
+         "paramtype": "String"
+      },
+      "DSXSetFontSize": {
+         "property": "fweight",
+         "paramtype": "String"
+      },
+      "DSXSetRowHeight": {
+         "property": "rowheight",
+         "paramtype": "int"
+      },
+      "DSXSetFontColor": {
+         "property": "fcolor",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "tooltipdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "SPARKLINECHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedfilename": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "String"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "PIEDRILLDOWNCHART": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "bulletdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "bulletthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "WATERFALLCHART": {
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "WHATIFANALYZER": {},
+   "HEATMAPCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "RESPONSIVEUI": {
+      "DSXSetVisibility": {
+         "property": "dsxvisibility",
+         "paramtype": "boolean"
+      }
+   },
+   "RANGESLIDER": {
+      "DSXSetBackgroundColor": {
+         "property": "backgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetSelectedRangeColor": {
+         "property": "sliderselectedrangecolor",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSliderDateDisplayFormat": {
+         "property": "sliderdateformat",
+         "paramtype": "String"
+      },
+      "DSXSetSliderDateReturnFormat": {
+         "property": "sliderdateformatztl",
+         "paramtype": "String"
+      },
+      "DSXSetSliderDateInputFormat": {
+         "property": "sliderdateformatinput",
+         "paramtype": "String"
+      },
+      "DSXSetSelectedValue": {
+         "property": "retainselection",
+         "paramtype": "String"
+      },
+      "DSXSetDataPoints": {
+         "property": "triggeronchange",
+         "paramtype": "String"
+      },
+      "DSXSetSelectedValues": {
+         "property": "retainselection",
+         "paramtype": "String"
+      }
+   },
+   "FACETFILTER": {
+      "DSXSetBackgroundColor": {
+         "property": "backgroundcolor",
+         "paramtype": "String"
+      }
+   },
+   "RADARCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "LISTBOX": {
+      "DSXSetVisible": {
+         "property": "scriptcalled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDisplayType": {
+         "property": "scriptcalled",
+         "paramtype": "String"
+      },
+      "DSXSetValueType": [
+         {
+            "property": "dispkeytext",
+            "paramtype": "String"
+         },
+         {
+            "property": "sendkeytext",
+            "paramtype": "String"
+         },
+         {
+            "property": "listkeytypedisplay",
+            "paramtype": "String"
+         }
+      ],
+      "DSXSetSortType": {
+         "property": "listkeytypesend",
+         "paramtype": "String"
+      },
+      "DSXSetnumberOfItems": {
+         "property": "listsort",
+         "paramtype": "String"
+      },
+      "DSXSetHorizontalScrollBarEnable": {
+         "property": "listlength",
+         "paramtype": "boolean"
+      },
+      "DSXSetVerticalScrollBarEnable": {
+         "property": "hbr",
+         "paramtype": "boolean"
+      },
+      "DSXSetEnableSearch": {
+         "property": "vbr",
+         "paramtype": "boolean"
+      },
+      "DSXSetenableAllMembers": {
+         "property": "listsearch",
+         "paramtype": "boolean"
+      },
+      "DSXSetallMemeberText": {
+         "property": "listallmembers",
+         "paramtype": "String"
+      },
+      "DSXSetallMemeberkey": {
+         "property": "listallmembertext",
+         "paramtype": "String"
+      },
+      "DSXSetSelectedValues": {
+         "property": "listallmemberkey",
+         "paramtype": "String"
+      },
+      "DSXsetItems": {
+         "property": "keyselected",
+         "paramtype": "String"
+      },
+      "DSXsetDimension": {
+         "property": "dimensionlist",
+         "paramtype": "Dimension"
+      }
+   },
+   "COMBOBOX": {
+      "DSXSetDisplayType": {
+         "property": "dispkeytext",
+         "paramtype": "String"
+      },
+      "DSXSetValueType": [
+         {
+            "property": "sendkeytext",
+            "paramtype": "String"
+         },
+         {
+            "property": "listkeytypedisplay",
+            "paramtype": "String"
+         }
+      ],
+      "DSXSetKeyValueType": {
+         "property": "listkeytypesend",
+         "paramtype": "String"
+      },
+      "DSXSetSortType": {
+         "property": "listsort",
+         "paramtype": "String"
+      },
+      "DSXSetnumberOfItems": {
+         "property": "listlength",
+         "paramtype": "String"
+      },
+      "DSXSetHorizontalScrollBarEnable": {
+         "property": "hbr",
+         "paramtype": "boolean"
+      },
+      "DSXSetVerticalScrollBarEnable": {
+         "property": "vbr",
+         "paramtype": "boolean"
+      },
+      "DSXSetEnableSearch": {
+         "property": "listsearch",
+         "paramtype": "boolean"
+      },
+      "DSXSetenableAllMembers": {
+         "property": "listallmembers",
+         "paramtype": "boolean"
+      },
+      "DSXSetallMemeberText": {
+         "property": "listallmembertext",
+         "paramtype": "String"
+      },
+      "DSXSetallMemeberkey": {
+         "property": "listallmemberkey",
+         "paramtype": "String"
+      },
+      "DSXSetSelectedValues": {
+         "property": "keyselected",
+         "paramtype": "String"
+      },
+      "DSXsetDimension": {
+         "property": "dimensionlist",
+         "paramtype": "Dimension"
+      }
+   },
+   "PPTEXPORT": {
+      "DSXSetEnableTemplate": {
+         "property": "ppttemplateenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetTemplatePPT": {
+         "property": "pptTemplateName",
+         "paramtype": "String"
+      },
+      "DSXSetDocumentName": {
+         "property": "pptDocumentName",
+         "paramtype": "String"
+      },
+      "DSXSetServerURL": {
+         "property": "ppturl",
+         "paramtype": "String"
+      },
+      "DSXSetDateFormat": {
+         "property": "pptDateFormat",
+         "paramtype": "String"
+      },
+      "DSXSetTextPlaceholder1": {
+         "property": "pptDescriptor1",
+         "paramtype": "String"
+      },
+      "DSXSetTextPlaceholder2": {
+         "property": "pptDescriptor2",
+         "paramtype": "String"
+      },
+      "DSXSetTextPlaceholder3": {
+         "property": "pptDescriptor3",
+         "paramtype": "String"
+      },
+      "DSXSetTextPlaceholder4": {
+         "property": "pptDescriptor4",
+         "paramtype": "String"
+      },
+      "DSXSetTextPlaceholder5": {
+         "property": "pptDescriptor5",
+         "paramtype": "String"
+      },
+      "DSXSetTextPlaceholder6": {
+         "property": "pptDescriptor6",
+         "paramtype": "String"
+      },
+      "DSXSetTextPlaceholder7": {
+         "property": "pptDescriptor7",
+         "paramtype": "String"
+      },
+      "DSXSetTextPlaceholder8": {
+         "property": "pptDescriptor8",
+         "paramtype": "String"
+      },
+      "DSXSetTextPlaceholder9": {
+         "property": "pptDescriptor9",
+         "paramtype": "String"
+      },
+      "DSXSetFitToPage": {
+         "property": "fitToPage",
+         "paramtype": "boolean"
+      },
+      "DSXSetOnDemandScript": {
+         "property": "isScriptingEnabled",
+         "paramtype": ""
+      }
+   },
+   "TRENDICON": {},
+   "BOXPLOTCHART": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDashStyle": {
+         "property": "boxplotplotoptionstemDashStyle",
+         "paramtype": "String"
+      },
+      "DSXSetOnDemandScript": {
+         "property": "loadingenable",
+         "paramtype": ""
+      }
+   },
+   "RISKMATRIXCHART": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "MAILEXPORT": {
+      "DSXSetServerURL": {
+         "property": "mailurl",
+         "paramtype": "String"
+      },
+      "DSXSetOnBehalf": {
+         "property": "fromemail",
+         "paramtype": "String"
+      },
+      "DSXSetToMailId": {
+         "property": "toemail",
+         "paramtype": "String"
+      },
+      "DSXSetCcMailId": {
+         "property": "ccemail",
+         "paramtype": "String"
+      },
+      "DSXSetBccMailId": {
+         "property": "bccemail",
+         "paramtype": "String"
+      },
+      "DSXSetMailSubject": {
+         "property": "mailSubject",
+         "paramtype": "String"
+      },
+      "DSXSetMailBody": {
+         "property": "mailBody",
+         "paramtype": "String"
+      },
+      "DSXSetAttachmentType": {
+         "property": "attachmentType",
+         "paramtype": "String"
+      },
+      "DSXSetOnDemandScript": {
+         "property": "isScriptingEnabled",
+         "paramtype": ""
+      }
+   },
+   "ADVANCEDKPITILE": {
+      "DSXSetChartBottomMargin": {
+         "property": "chartmarginbottom",
+         "paramtype": "String"
+      },
+      "DSXSetChartLeftMargin": {
+         "property": "chartmarginleft",
+         "paramtype": "String"
+      },
+      "DSXSetChartRightMargin": {
+         "property": "chartmarginright",
+         "paramtype": "String"
+      },
+      "DSXSetChartTopMargin": {
+         "property": "chartmargintop",
+         "paramtype": "String"
+      },
+      "DSXSetChartPanKey": {
+         "property": "chartpankey",
+         "paramtype": "String"
+      },
+      "DSXSetChartPanning": {
+         "property": "chartpanning",
+         "paramtype": "boolean"
+      },
+      "DSXSetChartPinchType": {
+         "property": "chartpinchtype",
+         "paramtype": "String"
+      },
+      "DSXSetPlotShadow": {
+         "property": "plotshadow",
+         "paramtype": "boolean"
+      },
+      "DSXSetChartZoomType": {
+         "property": "chartzoomtype",
+         "paramtype": "String"
+      },
+      "DSXSetHorizontalZoomButtonAlign": {
+         "property": "zoombuttonalign",
+         "paramtype": "String"
+      },
+      "DSXSetVerticalZoomButtonAlign": {
+         "property": "zoombuttonverticalalign",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "advkpidatalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetZoomButtonBackgroundColor": {
+         "property": "resetzoombuttonbackgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetZoomButtonTextColor": {
+         "property": "resetzoombuttontextcolor",
+         "paramtype": "String"
+      },
+      "DSXSetZoomButtonRadius": {
+         "property": "resetzoombuttonradius",
+         "paramtype": "float"
+      },
+      "DSXSetZoomButtonHoverBackgroundColor": {
+         "property": "resetzoombuttonhoverbackgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetZoomButtonHoverTextColor": {
+         "property": "resetzoombuttonhovertextcolor",
+         "paramtype": "String"
+      },
+      "DSXSetZoomSelectionAreaBackgroundColor": {
+         "property": "zoomselectionareabackgroundcolor",
+         "paramtype": "String"
+      },
+      "DSXSetDatalabelTextColor": {
+         "property": "datalabeltextcolor",
+         "paramtype": "String"
+      },
+      "DSXSetDatalabelFontWeight": {
+         "property": "datalabelfontweight",
+         "paramtype": "String"
+      },
+      "DSXSetDatalabelFontSize": {
+         "property": "datalabelfontsize",
+         "paramtype": "float"
+      },
+      "DSXSetDatalabelFontFamily": {
+         "property": "datalabelfontfamily",
+         "paramtype": "String"
+      },
+      "DSXSetKPIBorderStyle": {
+         "property": "kpiborderstyle",
+         "paramtype": "String"
+      },
+      "DSXSetKPIBorderWidth": {
+         "property": "kpiborderwidth",
+         "paramtype": "int"
+      },
+      "DSXSetKPIBorderColor": {
+         "property": "kpibordercolor",
+         "paramtype": "String"
+      },
+      "DSXSetKPIBorderRadius": {
+         "property": "kpiborderradius",
+         "paramtype": "float"
+      },
+      "DSXSetDataValue": {
+         "property": "datavalue",
+         "paramtype": "String"
+      },
+      "DSXSetkpititlecolor": {
+         "property": "advkpititlecolor",
+         "paramtype": "String"
+      },
+      "DSXSetkpititlefontweight": {
+         "property": "advkpititlefontweight",
+         "paramtype": "String"
+      },
+      "DSXSetkpititlefontsize": {
+         "property": "advkpititlefontsize",
+         "paramtype": "float"
+      },
+      "DSXSetkpititlefontfamily": {
+         "property": "advkpititlefontfamily",
+         "paramtype": "String"
+      }
+   },
+   "TAGCLOUD": {
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "DOCEXPORT": {
+      "DSXSetDocumentName": {
+         "property": "docDocumentName",
+         "paramtype": "String"
+      },
+      "DSXSetServerURL": {
+         "property": "docurl",
+         "paramtype": "String"
+      },
+      "DSXSetOnDemandScript": {
+         "property": "isScriptingEnabled",
+         "paramtype": ""
+      }
+   },
+   "POLARCHART": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "int"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "SEARCHBOX": {},
+   "HIERARCHIALFILTER": {
+      "DSXSetEnableSearch": {
+         "property": "enablesearch",
+         "paramtype": "boolean"
+      },
+      "DSXsetExpandLevel": {
+         "property": "expandlevel",
+         "paramtype": "int"
+      },
+      "DSXsetHierarchyDimensionText": {
+         "property": "hfdataseries",
+         "paramtype": "String"
+      },
+      "DSXsetHierarchyDimensionKey": {
+         "property": "hfdataseries",
+         "paramtype": "String"
+      },
+      "DSXsetElement": {
+         "property": "issetdimensionkey",
+         "paramtype": "String"
+      }
+   },
+   "PERIODSELECTORYQMM": {
+      "DSXSetDelimitter": {
+         "property": "delimitter",
+         "paramtype": "String"
+      },
+      "DSXSetStartYear": {
+         "property": "yqmmstartyear",
+         "paramtype": "int"
+      },
+      "DSXSetEndYear": {
+         "property": "ztlvalue",
+         "paramtype": "int"
+      },
+      "DSXSetMonth": {
+         "property": "ztlvalue",
+         "paramtype": "String"
+      },
+      "DSXSetDateFormat": {
+         "property": "fiscalyrenable",
+         "paramtype": "String"
+      }
+   },
+   "PERIODSELECTORYQM": {
+      "DSXsetVisible": {
+         "property": "visible",
+         "paramtype": "boolean"
+      }
+   },
+   "PERIODSELECTORYM": {},
+   "MENU": {
+      "DSXSetSelectedKey": {
+         "property": "defaultselectedmenu",
+         "paramtype": "String"
+      }
+   },
+   "TABLE": {},
+   "VBIPDFEXPORT": {
+      "DSXSetPageOrientation": {
+         "property": "pdfOrientation",
+         "paramtype": "String"
+      },
+      "DSXSetPageSize": {
+         "property": "pdfFormat",
+         "paramtype": "VBXPageSizeEnumfield"
+      },
+      "DSXSetLeftMargin": {
+         "property": "pdfLeftMargin",
+         "paramtype": "String"
+      },
+      "DSXSetTopMargin": {
+         "property": "pdfTopMargin",
+         "paramtype": "String"
+      },
+      "DSXSetDocumentName": {
+         "property": "pdfDocumentName",
+         "paramtype": "String"
+      },
+      "DSXSetHeaderText": {
+         "property": "pdfHeaderName",
+         "paramtype": "String"
+      },
+      "DSXSetFooterText": {
+         "property": "pdfFooterName",
+         "paramtype": "String"
+      },
+      "DSXSetHeaderDate": {
+         "property": "pdfHeaderDate",
+         "paramtype": "boolean"
+      },
+      "DSXSetFooterDate": {
+         "property": "pdfFooterDate",
+         "paramtype": "boolean"
+      },
+      "DSXSetHeaderPageNumber": {
+         "property": "pdfHeaderPageNo",
+         "paramtype": "boolean"
+      },
+      "DSXSetFooterPageNumber": {
+         "property": "pdfFooterPageNo",
+         "paramtype": "boolean"
+      },
+      "DSXSetFontSize": {
+         "property": "pdfHFFontSize",
+         "paramtype": "float"
+      },
+      "DSXSetTextColor": [
+         {
+            "property": "pdfTextColor",
+            "paramtype": "String"
+         },
+         {
+            "property": "pdfBtnTextColor",
+            "paramtype": "String"
+         }
+      ],
+      "DSXSetScaleToFit": {
+         "property": "pdfScaleToFit",
+         "paramtype": "boolean"
+      },
+      "DSXSetOnDemandScript": {
+         "property": "pdfsegmentprint",
+         "paramtype": ""
+      }
+   },
+   "COLUMNBARCHARTNEW": {
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetGroupingYaxisMaximum": {
+         "property": "groupingyaxismax",
+         "paramtype": "int"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetGroupedYaxisMinimum": {
+         "property": "groupingyaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "LINEARGAUGE": {
+      "DSXSetGaugeType": {
+         "property": "lineargaugetype",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "gaugedatalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetvalueaxislabelprefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetvalueaxislabelsuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetvalueaxislabelenabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetvalueaxistitleenabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetvalueaxistitletext": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetGaugeMinValue": {
+         "property": "loadingenable",
+         "paramtype": "int"
+      }
+   },
+   "CONSTANTDATASOURCE": {
+      "DSXSetdatasourcevalue": {
+         "property": "datasourcevalue",
+         "paramtype": "String"
+      }
+   },
+   "TREEMAP": {
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "ADVANCEDGAUGE": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "gaugedatalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetvalueaxis1labelenabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetvalueaxis1labelprefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetvalueaxis1labelsuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetvalueaxis2labelprefix": {
+         "property": "yaxislabelprefix1",
+         "paramtype": "String"
+      },
+      "DSXSetvalueaxis2labelsuffix": {
+         "property": "yaxislabelsuffix1",
+         "paramtype": "String"
+      },
+      "DSXSetvalueaxis1titleenabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetvalueaxis1titletext": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetvalueaxis2labelenabled": {
+         "property": "yaxislabelenabled1",
+         "paramtype": "boolean"
+      },
+      "DSXSetvalueaxis2titleenabled": {
+         "property": "yaxistitleenabled1",
+         "paramtype": "boolean"
+      },
+      "DSXSetvalueaxis2titletext": {
+         "property": "yaxistitletext1",
+         "paramtype": "String"
+      },
+      "DSXSetPlotbandValue": {
+         "property": "loadingenable",
+         "paramtype": "String"
+      }
+   },
+   "SUPERCONTAINER": {
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelEnabled": {
+         "property": "xaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisLabelPrefix": {
+         "property": "xaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisLabelSuffix": {
+         "property": "xaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisTitleEnabled": {
+         "property": "xaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisTitleText": {
+         "property": "xaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotBandEnabled": {
+         "property": "xaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotBandFrom": {
+         "property": "xaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandTo": {
+         "property": "xaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotLineEnabled": {
+         "property": "xaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetXAxisPlotLineValue": {
+         "property": "xaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMaximum": {
+         "property": "yaxismax",
+         "paramtype": "float"
+      },
+      "DSXSetYaxisMinimum": {
+         "property": "yaxismin",
+         "paramtype": "int"
+      },
+      "DSXSetYAxisLabelEnabled": {
+         "property": "yaxislabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisLabelPrefix": {
+         "property": "yaxislabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisLabelSuffix": {
+         "property": "yaxislabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisTitleEnabled": {
+         "property": "yaxistitleenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisTitleText": {
+         "property": "yaxistitletext",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandEnabled": {
+         "property": "yaxisplotbandenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotBandFrom": {
+         "property": "yaxisplotbandfrom",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotBandTo": {
+         "property": "yaxisplotbandto",
+         "paramtype": "float"
+      },
+      "DSXSetYAxisPlotLineEnabled": {
+         "property": "yaxisplotlineenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetYAxisPlotLineValue": {
+         "property": "yaxisplotlinevalue",
+         "paramtype": "float"
+      },
+      "DSXSetXAxisPlotBandColor": {
+         "property": "xaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetXAxisPlotLineColor": {
+         "property": "xaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotBandColor": {
+         "property": "yaxisplotbandcolor",
+         "paramtype": "String"
+      },
+      "DSXSetYAxisPlotLineColor": {
+         "property": "yaxisplotlinecolor",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      }
+   },
+   "CALENDARHEATMAP": {
+      "DSXSetDomain": {
+         "property": "domain",
+         "paramtype": "String"
+      },
+      "DSXSetSubDomain": {
+         "property": "subdomain",
+         "paramtype": "String"
+      },
+      "DSXSetDomainRange": {
+         "property": "domainrange",
+         "paramtype": "int"
+      },
+      "DSXSetMinDate": {
+         "property": "mindate",
+         "paramtype": "String"
+      },
+      "DSXSetMaxDate": {
+         "property": "maxdate",
+         "paramtype": "String"
+      },
+      "DSXSetStartDate": {
+         "property": "startdate",
+         "paramtype": "String"
+      },
+      "DSXSetWeekStart": {
+         "property": "weekstart",
+         "paramtype": "String"
+      },
+      "DSXSetPrevNextStep": {
+         "property": "prevnextstep",
+         "paramtype": "int"
+      },
+      "DSXSetRowLimit": {
+         "property": "rowlimit",
+         "paramtype": "int"
+      },
+      "DSXSetColumnLimit": {
+         "property": "collimit",
+         "paramtype": "int"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubtitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetDateFormat": {
+         "property": "returndateformat",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "WAFFLECHART": {
+      "DSXSetTitleText": {
+         "property": "chartTitle",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "graphTitleEnabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "graphValueEnabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "graphValueDecimalPlaces",
+         "paramtype": "String"
+      },
+      "DSXSetChartColor": {
+         "property": "graphColor",
+         "paramtype": ""
+      },
+      "DSXSetEmptyColor": {
+         "property": "graphEmptyColor",
+         "paramtype": ""
+      },
+      "DSXSetFilledIconColor": {
+         "property": "validIconColor",
+         "paramtype": ""
+      },
+      "DSXSetNonFilledIconColor": {
+         "property": "invalidIconColor",
+         "paramtype": ""
+      },
+      "DSXSetResponsive": {
+         "property": "responsive",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipdecimal",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetChartValue": {
+         "property": "graphValue",
+         "paramtype": "String"
+      },
+      "DSXSetMaxValue": {
+         "property": "graphMaxValue",
+         "paramtype": "String"
+      },
+      "DSXSetDataType": {
+         "property": "waffledatatype",
+         "paramtype": "String"
+      },
+      "DSXSetDataValueSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultCellSelection"
+      }
+   },
+   "PICTOGRAM": {
+      "DSXSetChartTitleEnabled": {
+         "property": "graphTitleEnabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetChartValueEnabled": {
+         "property": "customTextEnabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetFilledIconColor": {
+         "property": "validIconColor",
+         "paramtype": "String"
+      },
+      "DSXSetNonFilledIconColor": {
+         "property": "invalidIconColor",
+         "paramtype": "String"
+      },
+      "DSXSetResponsive": {
+         "property": "responsive",
+         "paramtype": "boolean"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataType": {
+         "property": "pictogramtype",
+         "paramtype": "String"
+      },
+      "DSXSetChartTitle": {
+         "property": "chartTitle",
+         "paramtype": "String"
+      },
+      "DSXSetChartValue": {
+         "property": "graphValue",
+         "paramtype": "String"
+      },
+      "DSXSetMaxValue": {
+         "property": "graphMaxValue",
+         "paramtype": "String"
+      }
+   },
+   "TREEMAPDRILLDOWN": {
+      "DSXSetDataLabelNoOfDecimals": {
+         "property": "decimal",
+         "paramtype": "int"
+      },
+      "DSXSetThousandSeparator": {
+         "property": "progressthousandseparator",
+         "paramtype": "String"
+      },
+      "DSXSetDecimalSeparator": {
+         "property": "progressdecimalseparator",
+         "paramtype": "String"
+      },
+      "DSXSetTitleEnable": {
+         "property": "titleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetTitleText": {
+         "property": "titletext",
+         "paramtype": "String"
+      },
+      "DSXSetSubTitleEnable": {
+         "property": "subtitleenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetSubTitleText": {
+         "property": "subtitletext",
+         "paramtype": "String"
+      },
+      "DSXSetToolTipEnabled": {
+         "property": "tooltipenable",
+         "paramtype": "boolean"
+      },
+      "DSXSetToolTipNoOfDecimals": {
+         "property": "tooltipvaluedecimals",
+         "paramtype": "int"
+      },
+      "DSXSetTooltipValuePrefix": {
+         "property": "tooltipvalueprefix",
+         "paramtype": "String"
+      },
+      "DSXSetTooltipValueSuffix": {
+         "property": "tooltipvaluesuffix",
+         "paramtype": "String"
+      },
+      "DSXSetExportedFileName": {
+         "property": "exportedfilename",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelEnabled": {
+         "property": "datalabelenabled",
+         "paramtype": "boolean"
+      },
+      "DSXSetDataLabelPrefix": {
+         "property": "datalabelprefix",
+         "paramtype": "String"
+      },
+      "DSXSetDataLabelSuffix": {
+         "property": "datalabelsuffix",
+         "paramtype": "String"
+      },
+      "DSXSetDataSelection": {
+         "property": "loadingenable",
+         "paramtype": "ResultSetSelection"
+      }
+   },
+   "TABLEBETA": {},
+   "GANTTCHART": {},
+   "WEBSERVICEDATASOURCE": {
+      "DSXSetParamsList": {
+         "property": "paramslist",
+         "paramtype": "String"
+      }
+   },
+   "TRELLISCHART": {}
+}

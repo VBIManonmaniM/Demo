@@ -1,0 +1,2 @@
+{{#each allTestSuites}}{{#each suites}}{{#each tests}}{{#each classes}}{{#each testMethods}}{{#unless isConfig}}{{#data-foramt ../../../startedAt }}{{/data-foramt}},{{../../../buildNo}},{{../../../browserstackEnvironment}},{{../name}},{{#format-testmethod name}}{{/format-testmethod}},{{#if_eq status "PASS"}}1{{else}}0{{/if_eq}},{{#if_eq status "FAIL"}}1{{else}}0{{/if_eq}},{{#if_eq status "SKIP"}}1{{else}}0{{/if_eq}}
+{{/unless}}{{/each}}{{/each}}{{/each}}{{/each}}{{/each}}
