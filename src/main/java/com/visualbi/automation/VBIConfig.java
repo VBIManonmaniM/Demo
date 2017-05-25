@@ -4,9 +4,9 @@ package com.visualbi.automation;
  * Created by praveenn on 1/10/2017.
  */
 public class VBIConfig {
-    public  static String sdkVersion ="1.59";
-    public static String buildNo ="DSX.DS14.SP1.VBI.v1.0.Suite.20170413.11.33.24";
-    public  static String designstudioPortNumber ="8002";
+    public static String sdkVersion ="1.60";
+    public static String buildNo ="DSX.DS14.SP1.VBI.v1.0.Suite.20170524.09.45.37";
+    public static String designstudioPortNumber ="8000";
     public static String testMode ="local";
     public static String browserstackEnvironment ="WServer 2012 Chrome 56";
     public static String dsVersion ="1601";
@@ -27,7 +27,7 @@ public class VBIConfig {
     public final static String CUSTOM_REPORT_OUTPUT_PATH =WORKING_DIR+"\\test-output\\custom-testng-report";
     public final static String TEST_OUTPUT =WORKING_DIR +"\\test-output";
     public final static String BS_CONFIG_FILE_PATH =WORKING_DIR +"\\crossbrowsertesting.config.json";
-    public final static String ONE_DRVIE_ARCHIVE_PATH ="C:\\Users\\praveenn\\OneDrive - VISUAL BI Solutions Inc\\AUTOMATION_RESULTS";
+    public final static String ONE_DRVIE_ARCHIVE_PATH =USER_HOME_DIR +"\\OneDrive - VISUAL BI Solutions Inc\\AUTOMATION_RESULTS";
     public final static String ZIP_ARCHIVE_FOLDER_PATH =WORKING_DIR+"\\zip-archive";
     public final static String SCREENSHOT_PATH= CUSTOM_REPORT_OUTPUT_PATH +"\\screenshots";
     public final static String BROWSER_LOG_PATH= CUSTOM_REPORT_OUTPUT_PATH +"\\browser-logs";

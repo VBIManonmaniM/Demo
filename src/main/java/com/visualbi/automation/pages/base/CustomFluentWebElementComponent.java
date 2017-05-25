@@ -66,6 +66,21 @@ public class CustomFluentWebElementComponent extends FluentWebElement {
         return (float) 0.00;}
     public String getCursor(){return this.cssValue("cursor");}
     public String getTransform(){return this.attribute("transform");}
+    public String getTransformOrigin(){return this.attribute("transform-origin");}
+    public String getAlignFromTransform(){
+        String transformOrigin=this.cssValue("transform-origin");
+        if(transformOrigin.contains("0%"))
+        {
+            return "left";
+        }
+        else if(transformOrigin.contains("50%"))
+        {
+            return "center";
+        }
+        else {
+           return "right";
+        }
+    }
 
 
 

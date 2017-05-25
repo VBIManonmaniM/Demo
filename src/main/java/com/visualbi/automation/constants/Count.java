@@ -11,4 +11,7 @@ public final  class Count {
     public static final String THREE = "3";
     public static final String EIGHT = "8";
     public static final String THIRTY_ONE = "31";
+    public static final String ZERO = "0";
+    public static final String TWELVE = "12";
+    public static final String ONE = "1";
 }

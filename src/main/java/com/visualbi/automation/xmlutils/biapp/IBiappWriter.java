@@ -8,5 +8,5 @@ import com.visualbi.automation.xmlutils.models.Component;
  */
 public interface IBiappWriter {
 
-    public void createBIAppFile(String filePath, Component component, String sdkName, String sdkVersion);
+    public void createBIAppFile(String filePath, Component component, String sdkName, String sdkVersion,String dataSourceName);
 }

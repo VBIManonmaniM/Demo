@@ -1,5 +1,6 @@
 package com.visualbi.automation.pages.base;
 
+import org.fluentlenium.core.domain.FluentList;
 import org.fluentlenium.core.domain.FluentWebElement;
 import org.fluentlenium.core.hook.wait.Wait;
 import org.openqa.selenium.By;
@@ -42,11 +43,17 @@ public class HighchartsPage extends ApplicationPage {
     @FindBy(css = ".highcharts-yaxis .highcharts-axis-title")
     protected FluentWebElement yAxisTitleElement;
 
-    @FindBy(css = ".highcharts-xaxis-labels text:nth-child(1)")
+    @FindBy(css = ".highcharts-xaxis-labels text")  //.highcharts-xaxis-labels span
     protected FluentWebElement xAxisFirstLabel;
 
-    @FindBy(css = ".highcharts-xaxis-labels text:last-child")
+    @FindBy(css = ".highcharts-xaxis-labels span")  //.highcharts-xaxis-labels span
+    protected FluentWebElement xAxisFirstLabelSpan;
+
+    @FindBy(css = ".highcharts-xaxis-labels text:last-child")  //.highcharts-xaxis-labels span:last-child
     protected FluentWebElement xAxisLastLabel;
+
+    @FindBy(css = ".highcharts-xaxis-labels span:last-child")
+    protected FluentWebElement xAxisLastLabelSpan;
 
     @FindBy(css = ".highcharts-yaxis-labels text:last-child")
     protected FluentWebElement yAxisLastLabel;
@@ -54,8 +61,15 @@ public class HighchartsPage extends ApplicationPage {
     @FindBy(css = ".highcharts-xaxis-labels text:nth-child(2) tspan")
     protected FluentWebElement xAxisLabelText;
 
+    @FindBy(css = ".highcharts-xaxis-labels span:nth-child(2)") //.highcharts-xaxis-labels span:nth-child(2)
+    protected FluentWebElement xAxisLabelSpan;
+
+
     @FindBy(css = ".highcharts-xaxis-labels text:nth-child(2)")
     protected FluentWebElement xAxisSecondLabel;
+
+    @FindBy(css = ".highcharts-xaxis-labels span:nth-child(2)")
+    protected FluentWebElement xAxisSecondLabelSpan;
 
     @FindBy(css = ".highcharts-yaxis-labels text:nth-child(1)")
     protected FluentWebElement yAxisFirstLabel;
@@ -110,17 +124,26 @@ public class HighchartsPage extends ApplicationPage {
     @FindBy(css = ".highcharts-credits")
     protected FluentWebElement creditsElemnt;
 
-    @FindBy(css=".highcharts-label.highcharts-legend-title text")
+    @FindBy(css=".highcharts-label.highcharts-legend-title span")
     protected FluentWebElement legendTitle;
 
     @FindBy(css=".highcharts-legend-item text")
     protected FluentWebElement legendItemText;
+
+    @FindBy(css=".highcharts-legend-item span")
+    protected FluentWebElement legendItemSpan;
+
+    @FindBy(css=".highcharts-legend-item rect")
+    protected FluentWebElement legendItem;
 
     @FindBy(css=".highcharts-legend rect:nth-child(1)")
     protected FluentWebElement legendItemBackGround;
 
     @FindBy(css=".highcharts-legend .highcharts-point")
     protected FluentWebElement legendSymbol;
+
+
+
 
     /*
      */
@@ -153,6 +176,52 @@ public class HighchartsPage extends ApplicationPage {
 
     @FindBy(css=".highcharts-container")
     protected FluentWebElement highchartsContainer;
+
+    // DATA Series
+
+    @FindBy(css=".highcharts-axis-labels.highcharts-xaxis-labels text:first-child") //.highcharts-axis-labels.highcharts-xaxis-labels span:first-child
+    protected FluentWebElement highchartsHierarchyLabel;
+
+    @FindBy(css=".highcharts-legend-item.highcharts-bar-series.highcharts-color-undefined.highcharts-series-0 > text")
+    protected FluentWebElement dataSeriesLabel;
+
+
+    @FindBy(css=".highcharts-axis-labels.highcharts-xaxis-labels span:last-child")
+    protected FluentWebElement highchartsTotalText;
+
+    @FindBy(css=".highcharts-legend > g > g > g:first-child text")
+    protected FluentWebElement highchartsTotalTextDB;
+
+    @FindBy(css=".highcharts-legend-item.highcharts-area-series rect")
+    protected FluentWebElement highchartsDataSeriesColor;
+
+    @FindBy(css=".highcharts-markers.highcharts-series-0.highcharts-area-series.highcharts-color-undefined.highcharts-tracker path:first-child")
+    protected FluentWebElement highchartsMarkerColor;
+
+    @FindBy(css=".highcharts-markers.highcharts-series-0.highcharts-area-series.highcharts-color-undefined.highcharts-tracker *:last-child path")
+    protected FluentWebElement highchartsMarkerPoint;
+
+    @FindBy(css=".highcharts-series.highcharts-series-7.highcharts-line-series path")
+    protected FluentWebElement highchartsTrendLine;
+
+
+    @FindBy(css=".highcharts-legend-item.highcharts-line-series.highcharts-color-undefined.highcharts-series-7 text")  //span
+    protected FluentWebElement highchartsTrendLineEquation;
+
+    @FindBy(css=".highcharts-legend-item.highcharts-line-series.highcharts-color-undefined.highcharts-series-7 path")
+    protected FluentWebElement highchartsTrendLineLegendItem;
+
+
+
+
+
+
+
+
+
+
+
+
 
     public CustomFluentWebElementComponent title(){
         return titleElement.as(CustomFluentWebElementComponent.class);
@@ -199,20 +268,35 @@ public class HighchartsPage extends ApplicationPage {
         return yAxisTitleElement.as(CustomFluentWebElementComponent.class);
     }
     public CustomFluentWebElementComponent xAxisFirstLabel(){
-        return xAxisFirstLabel.as(CustomFluentWebElementComponent.class);
+        if(xAxisFirstLabel.present())
+            return xAxisFirstLabel.as(CustomFluentWebElementComponent.class);
+        else
+            return xAxisFirstLabelSpan.as(CustomFluentWebElementComponent.class);
     }
     public CustomFluentWebElementComponent xAxisLastLabel(){
-        return xAxisLastLabel.as(CustomFluentWebElementComponent.class);
+        if(xAxisLastLabel.present())
+            return xAxisLastLabel.as(CustomFluentWebElementComponent.class);
+        else
+            return xAxisLastLabelSpan.as(CustomFluentWebElementComponent.class);
+
     }
     public CustomFluentWebElementComponent yAxisLastLabel(){
         return yAxisLastLabel.as(CustomFluentWebElementComponent.class);
     }
 
     public CustomFluentWebElementComponent xAxisLabelText(){
-        return xAxisLabelText.as(CustomFluentWebElementComponent.class);
+        if(xAxisLabelText.present())
+            return xAxisLabelText.as(CustomFluentWebElementComponent.class);
+        else
+            return xAxisLabelSpan.as(CustomFluentWebElementComponent.class);
+
     }
     public CustomFluentWebElementComponent xAxisSecondLabel(){
-        return xAxisSecondLabel.as(CustomFluentWebElementComponent.class);
+        if(xAxisSecondLabel.present())
+            return xAxisSecondLabel.as(CustomFluentWebElementComponent.class);
+        else
+            return xAxisSecondLabelSpan.as(CustomFluentWebElementComponent.class);
+
     }
 
     public CustomFluentWebElementComponent yAxisSecondLabelText(){
@@ -235,13 +319,9 @@ public class HighchartsPage extends ApplicationPage {
     public CustomFluentWebElementComponent yAxisLine(){
         return yAxisLine.as(CustomFluentWebElementComponent.class);
     }
-    public CustomFluentWebElementComponent xAxisGridLine(){
-        return xAxisGridLine.as(CustomFluentWebElementComponent.class);
-    }
+    public CustomFluentWebElementComponent xAxisGridLine(){ return xAxisGridLine.as(CustomFluentWebElementComponent.class);  }
 
-    public CustomFluentWebElementComponent yAxisGridLine(){
-        return yAxisGridLine.as(CustomFluentWebElementComponent.class);
-    }
+    public CustomFluentWebElementComponent yAxisGridLine(){ return yAxisGridLine.as(CustomFluentWebElementComponent.class);  }
     public CustomFluentWebElementComponent xAxisTick(){
         return xAxisTick.as(CustomFluentWebElementComponent.class);
     }
@@ -258,9 +338,7 @@ public class HighchartsPage extends ApplicationPage {
        // return yAxisPlotBand.as(CustomFluentWebElementComponent.class);
         return $(".highcharts-plot-bands-0 .highcharts-plot-band").get(1).as(CustomFluentWebElementComponent.class);
     }
-    public CustomFluentWebElementComponent plotBandLabel(){
-        return plotBandLabel.as(CustomFluentWebElementComponent.class);
-    }
+    public CustomFluentWebElementComponent plotBandLabel(){ return plotBandLabel.as(CustomFluentWebElementComponent.class);    }
     public CustomFluentWebElementComponent yAxisPlotBandLabel(){
 
                 if($(".highcharts-plot-band-label").size()>1)
@@ -278,9 +356,7 @@ public class HighchartsPage extends ApplicationPage {
         return $(".highcharts-plot-lines-5 path").get(1).as(CustomFluentWebElementComponent.class);
     }
 
-    public CustomFluentWebElementComponent plotLineLabel(){
-        return plotLineLabel.as(CustomFluentWebElementComponent.class);
-    }
+    public CustomFluentWebElementComponent plotLineLabel(){ return plotLineLabel.as(CustomFluentWebElementComponent.class); }
     public CustomFluentWebElementComponent yAxisPlotLineLabel(){
         if($(".highcharts-plot-line-label").size()>1)
              return $(".highcharts-plot-line-label").get(1).as(CustomFluentWebElementComponent.class);
@@ -293,16 +369,19 @@ public class HighchartsPage extends ApplicationPage {
         return creditsElemnt.as(CustomFluentWebElementComponent.class);
     }
 
-    public CustomFluentWebElementComponent legendTitle(){
-        return legendTitle.as(CustomFluentWebElementComponent.class);
-    }
+    public CustomFluentWebElementComponent legendTitle(){ return legendTitle.as(CustomFluentWebElementComponent.class);  }
 
     public CustomFluentWebElementComponent legendItemText(){
+    if(legendItemText.present())
         return legendItemText.as(CustomFluentWebElementComponent.class);
+    else
+        return legendItemSpan.as(CustomFluentWebElementComponent.class);
     }
 
-    public CustomFluentWebElementComponent legendBackground(){
-        return legendItemBackGround.as(CustomFluentWebElementComponent.class);
+    public CustomFluentWebElementComponent legendItem(){
+        return legendItem.as(CustomFluentWebElementComponent.class);
+    }
+    public CustomFluentWebElementComponent legendBackground(){ return legendItemBackGround.as(CustomFluentWebElementComponent.class);
     }
 
     public CustomFluentWebElementComponent legendSymbol(){
@@ -340,14 +419,10 @@ public class HighchartsPage extends ApplicationPage {
         return highchartsContainer.as(CustomFluentWebElementComponent.class);
     }
     public CustomFluentWebElementComponent toolTipText(){
-
-
-            if(toolTipText.present())
+        if(toolTipText.present())
             return toolTipText.as(CustomFluentWebElementComponent.class);
-            else
-                return toolTipSpan.as(CustomFluentWebElementComponent.class);
-
-
+        else
+            return toolTipSpan.as(CustomFluentWebElementComponent.class);
     }
 
 
@@ -355,6 +430,12 @@ public class HighchartsPage extends ApplicationPage {
     public void generateTooltip() {
         highchartsContainer.present();
         executeScript("$('.highcharts-container').parent().highcharts().tooltip.refresh($('.highcharts-container').parent().highcharts().series[0].data[0]);");
+
+    }
+
+    public void generateTooltipOnTrendLine() {
+        highchartsContainer.present();
+        executeScript("$('.highcharts-container').parent().highcharts().tooltip.refresh($('.highcharts-container').parent().highcharts().series[7].data[7]);");
 
     }
 
@@ -372,4 +453,56 @@ public class HighchartsPage extends ApplicationPage {
     }
 
 
+    /* Data Series */
+    public CustomFluentWebElementComponent highchartsHierarchyLabel()
+    {
+        return highchartsHierarchyLabel.as(CustomFluentWebElementComponent.class);
+    }
+
+    public CustomFluentWebElementComponent dataSeriesLabel()
+    {
+        return dataSeriesLabel.as(CustomFluentWebElementComponent.class);
+    }
+
+
+
+    public CustomFluentWebElementComponent highchartsTotalText()
+    {
+        return highchartsTotalText.as(CustomFluentWebElementComponent.class);
+    }
+
+    public CustomFluentWebElementComponent highchartsTotalTextDB()
+    {
+        return highchartsTotalTextDB.as(CustomFluentWebElementComponent.class);
+    }
+
+    public CustomFluentWebElementComponent highchartsDataSeriesColor()
+    {
+        return highchartsDataSeriesColor.as(CustomFluentWebElementComponent.class);
+    }
+    public CustomFluentWebElementComponent highchartsMarkerColor()
+    {
+        return highchartsMarkerColor.as(CustomFluentWebElementComponent.class);
+    }
+
+    public CustomFluentWebElementComponent highchartsMarkerPoint()
+    {
+        return highchartsMarkerPoint.as(CustomFluentWebElementComponent.class);
+    }
+
+
+    public CustomFluentWebElementComponent highchartsTrendLineEquation()
+    {
+        return highchartsTrendLineEquation.as(CustomFluentWebElementComponent.class);
+    }
+
+    public CustomFluentWebElementComponent highchartsTrendLine()
+    {
+        return highchartsTrendLine.as(CustomFluentWebElementComponent.class);
+    }
+
+    public CustomFluentWebElementComponent highchartsTrendLineLegendItem()
+    {
+        return highchartsTrendLineLegendItem.as(CustomFluentWebElementComponent.class);
+    }
 }
