@@ -19,4 +19,25 @@ import org.openqa.selenium.support.FindBy;
  {
   return highChartsPoint.as(CustomFluentWebElementComponent.class);
  }
+ @FindBy(css=".highcharts-series.highcharts-series-3.highcharts-bar-series.highcharts-color-0.highcharts-tracker > rect:nth-child(1)")
+ protected FluentWebElement highchartsDataSeriesColor;
+ public CustomFluentWebElementComponent highchartsDataSeriesColor(){
+  return highchartsDataSeriesColor.as(CustomFluentWebElementComponent.class);
+ }
+
+ @FindBy(css=".highcharts-series rect")
+ protected FluentWebElement legendItem;
+ public CustomFluentWebElementComponent legendItem(){
+  return legendItem.as(CustomFluentWebElementComponent.class);
+ }
+
+
+ @FindBy(css=".highcharts-axis-labels.highcharts-xaxis-labels > text:nth-child(10) > tspan")
+ protected FluentWebElement highchartsTotalText;
+ public CustomFluentWebElementComponent highchartsTotalText()    {       return highchartsTotalText.as(CustomFluentWebElementComponent.class);    }
+
+ @FindBy(css=".highcharts-axis-labels.highcharts-xaxis-labels > text:first-child > tspan")
+ protected FluentWebElement highchartsHierarchyLabel;
+
+ public CustomFluentWebElementComponent highchartsHierarchyLabel()    {       return highchartsHierarchyLabel.as(CustomFluentWebElementComponent.class);    }
 }

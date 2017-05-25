@@ -45,6 +45,13 @@ public class TestCodeGeneration {
         String[] excludeXAxisPlotBand={"HeatMapChart","ScatterChart","BubbleChart"};
         String[] excludeXAxisPlotLine={"HeatMapChart","ScatterChart","BubbleChart"};
         String[] includeXAxisBubblePlot={"ScatterChart","BubbleChart"};
+        String[] excludeDSDataSelection={"BoxPlotChart","BubbleChart","MultipleAxesChart","TreeMapDrilldown","ScatterChart","PieChart","FunnelPyramidChart","TreeMap","MarimekkoChart","WaterfallChart","SemicircledonutChart"};  // DS -Data Series
+        String[] excludeDSDataSeriesLables={"BoxPlotChart","BubbleChart","PieChart","MultipleAxesChart","TreeMapDrilldown","AngularGauge","HeatMapChart","SolidGauge","PieDrilldownChart","FunnelPyramidChart","LineChart","TreeMap","MarimekkoChart","WaterfallChart","SemicircledonutChart"};
+        String[] excludeDSDataSeriesGeneral={"SolidGauge","AngularGauge","MarimekkoChart"};
+        String[] includeDSMarkers={"AreaChart","DualAxesChart","LineChart","StackedAreaChart","SuperContainer"};
+        String[] includeDSTrendLine={"AreaChart","ColumnBarChartNew","ColumnBarChart","FixedColumnChart","GroupStackedColumnBarChart","LineChart","StackedColumnBarChart","SuperContainer"};
+        String[] includeDSErrorBar={"AreaChart","ColumnBarChartNew","ColumnBarChart","CombinationChart","DualAxesChart","LineChart","SuperContainer"};
+
         Template template = Velocity.getTemplate("src/main/code-templates/FluentTestTemplate.vm");
           charts.forEach(chart->{
             vc.put("Component",chart);
@@ -66,6 +73,12 @@ public class TestCodeGeneration {
             vc.put("excludeXAxisPlotBand",excludeXAxisPlotBand);
             vc.put("excludeXAxisPlotLine",excludeXAxisPlotLine);
             vc.put("includeXAxisBubblePlot",includeXAxisBubblePlot);
+            vc.put("excludeDSDataSelection",excludeDSDataSelection);
+            vc.put("excludeDSDataSeriesLables",excludeDSDataSeriesLables);
+            vc.put("excludeDSDataSeriesGeneral",excludeDSDataSeriesGeneral);
+            vc.put("includeDSMarkers",includeDSMarkers);
+            vc.put("includeDSTrendLine",includeDSTrendLine);
+            vc.put("includeDSErrorBar",includeDSErrorBar);
             vc.put("date",new Date());
 
 

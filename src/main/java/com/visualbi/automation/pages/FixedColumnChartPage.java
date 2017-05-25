@@ -20,4 +20,16 @@ import org.openqa.selenium.support.FindBy;
  {
   return highChartsPoint.as(CustomFluentWebElementComponent.class);
  }
+
+ @FindBy(css=".highcharts-legend-item.highcharts-column-series.highcharts-color-undefined.highcharts-series-0 > rect")
+ protected FluentWebElement highchartsDataSeriesColor;
+ public CustomFluentWebElementComponent highchartsDataSeriesColor(){
+  return highchartsDataSeriesColor.as(CustomFluentWebElementComponent.class);
+ }
+
+ @FindBy(css=".highcharts-legend-item.highcharts-column-series rect")
+ protected FluentWebElement legendItem;
+ public CustomFluentWebElementComponent legendItem(){
+  return legendItem.as(CustomFluentWebElementComponent.class);
+ }
 }
