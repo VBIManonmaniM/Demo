@@ -67,7 +67,7 @@ public class ClassModel {
                     break;
             }
         }
-        failPercentage=Math.round((float)totalFailed/totalTests)*100;
+        failPercentage=Math.round(((float)totalFailed/totalTests)*100);
     }
 
     public String getName() {

@@ -48,7 +48,7 @@ public class AllTestNgReports {
             totalMethods+=ts.getTotalMethods();
 
         }
-        failPercentage=Math.round((float)totalFailed/totalTests)*100;
+        failPercentage=Math.round(((float)totalFailed/totalTests)*100);
         userName=System.getProperty("user.name");
 
     }

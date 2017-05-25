@@ -9,6 +9,8 @@
   {{> testng-reporting/requiredScripts}}
   <script src="../js/build_data.js"></script>
   <script src="../js/propertyBank.js"></script>
+  <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
   <script>
       $( document ).ready(function() {
        if($('.list-group-item-danger').length!=0)
@@ -23,7 +25,7 @@
      }
      catch(err)
      {
-     parameters={};
+     parameters=[];
      }
 
     var paramTable=$('<table class="table table-bordered table-hover "></table>');
@@ -39,7 +41,9 @@
     $(this).empty();
     $(this).append(paramTable)
    });
-
+ $('#dataTable').DataTable({
+  "paging": false
+ });
 
 });
   </script>
@@ -88,13 +92,25 @@ $(document).keyup(function(e) {
         </h4>
       </div>
       <div class="panel-body">
-        <ul class="list-group">
+          <table style="width:100%" id="dataTable">
+              <thead>
+              <th>Chart Name</th>
+              <th>Status</th>
+              <th>Action</th>
+              <th>Time</th>
+              </thead>
+              <tbody>
+
           {{#each testMethods}}
+              {{#unless isConfig }}
+              <tr class="list-group-item-{{#result-color status}}{{/result-color}}">
+              <td style="width:60%">
+              <ul class="list-group" style="margin-bottom:0px !important">
           <div class="{{#is-config isConfig}}{{/is-config}}">
             <li data-toggle="tooltip" data-placement="top" title="{{#resolve-tooltip status}}{{/resolve-tooltip}}"
               class="scenario
                 list-group-item 
-                list-group-item-{{#result-color status}}{{/result-color}}">
+                list-group-item-{{#result-color status}}{{/result-color}}" style="border:0px !important">
               <span class="forDrop" data-target="#{{uniqueID}}" data-toggle="collapse">
                 <i class="glyphicon glyphicon-chevron-right"></i>
 
@@ -103,27 +119,6 @@ $(document).keyup(function(e) {
               <span class="label label-{{#result-color status}}{{/result-color}} pull-right">
                 {{#date durationMs}}{{/date}}
               </span>
-                {{#unless isConfig }}
-                    {{#if_eq status "FAIL"}}
-                    <i class="glyphicon glyphicon-camera screeenshot-{{status}}" onclick="showModal(this)"></i>
-                    <a class="glyphicon glyphicon-download-alt screeenshot-{{status}}" href="../exports/{{#filename ../name name}}{{/filename}}.zip"></a>
-                    <a class="glyphicon glyphicon-file screeenshot-{{status}}" href="../browser-logs/{{#filename ../name name}}{{/filename}}_log.txt"></a>
-
-
-                    <!-- The Modal -->
-                    <div  class="modal" onclick="closeModal()">
-
-                        <!-- The Close Button -->
-                        <span class="close" onclick="closeModal()">&times;</span>
-
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01" src="../screenshots/{{#filename ../name name}}{{/filename}}.png" alt="Failure Screenshot"  >
-
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption">Screenshot</div>
-                    </div>
-                        {{/if_eq}}
-                {{/unless}}
               <div id="{{uniqueID}}" class="collapseMagic collapse">
                     {{#unless isConfig }}
                       <ul class="steps list-group params">
@@ -192,8 +187,41 @@ $(document).keyup(function(e) {
               </div>
             </li>
           </div>
+              </ul>
+              </td>
+                  <td style="width:20%;padding-top:10px;">
+                      {{#error_type exception.clazz}}{{/error_type}}
+                  </td >
+                  <td style="width:10%;padding-top:10px;">
+                      {{#unless isConfig }}
+                          {{#if_eq status "FAIL"}}
+                              <i class="glyphicon glyphicon-camera screeenshot-{{status}}" onclick="showModal(this)"></i>
+                              <a class="glyphicon glyphicon-download-alt screeenshot-{{status}}" href="../exports/{{#filename params.paramsList.1.value name}}{{/filename}}.zip"></a>
+                              <a class="glyphicon glyphicon-file screeenshot-{{status}}" href="../browser-logs/{{#filename params.paramsList.1.value name}}{{/filename}}_log.txt"></a>
+                              <div  class="modal" onclick="closeModal()">
+
+                                  <!-- The Close Button -->
+                                  <span class="close" onclick="closeModal()">&times;</span>
+
+                                  <!-- Modal Content (The Image) -->
+                                  <img class="modal-content" id="img01" src="../screenshots/{{#filename params.paramsList.1.value name}}{{/filename}}.png" alt="Failure Screenshot"  >
+
+                                  <!-- Modal Caption (Image Text) -->
+                                  <div id="caption">Screenshot</div>
+                              </div>
+                          {{/if_eq}}
+                      {{/unless}}
+                  </td>
+                  <td style="witdh:10%;padding-top:10px;"> <span class="label label-{{#result-color status}}{{/result-color}} pull-right">
+                      {{#date durationMs}}{{/date}}
+                  </span>
+                  </td>
+              </tr>
+
+              {{/unless}}
           {{/each}}
-        </ul>
+              </tbody>
+          </table>
       </div>
     </div>
     <a href="#" class="back-to-top" style="display: none;">
