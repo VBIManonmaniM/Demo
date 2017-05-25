@@ -3,14 +3,19 @@ package com.visualbi.automation.base;
 import static com.visualbi.automation.constants.Properties.*;
 
 import com.visualbi.automation.VBIConfig;
+import com.visualbi.automation.constants.Properties;
 import com.visualbi.automation.pages.base.CustomFluentWebElementComponent;
 import com.visualbi.automation.pages.base.HighchartsPage;
 import com.visualbi.automation.xmlutils.models.Property;
 import com.visualbi.automation.xmlutils.models.Property2;
+import jdk.nashorn.internal.runtime.PropertyMap;
 import org.junit.ComparisonFailure;
 
 import static org.testng.Assert.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -108,15 +113,15 @@ public class HighchartsTest extends BaseTest {
     }
     public void testXAxisLabelStyle(Map<String, Property> propertyMap, HighchartsPage page){
         String regex="^\\"+propertyMap.get(XAxis.PREFIX).getValue()+".+\\"+propertyMap.get(XAxis.SUFFIX).getValue()+"$";
-        assertThat(page.xAxisLabelText().getText()).matches(regex);
-        assertThat(page.xAxisSecondLabel().getTextAnchor()).isEqualTo(propertyMap.get(XAxis.ALIGN).getExpectedValue());
+        assertThat(page.xAxisLabelText().getValue()).matches(regex);
+        assertThat(page.xAxisSecondLabel().getAlignFromTransform()).isEqualTo(propertyMap.get(XAxis.ALIGN).getValue());
         assertThat(page.xAxisSecondLabel().getColor()).isEqualTo(propertyMap.get(XAxis.COLOR).getValue());
         assertThat(page.xAxisSecondLabel().getFontFamily()).isEqualTo(propertyMap.get(XAxis.FONTFAMILY).getValue());
         assertThat(page.xAxisSecondLabel().getFontWeight()).isEqualTo(propertyMap.get(XAxis.FONTWEIGHT).getValue());
         assertThat(page.xAxisSecondLabel().getFontSize()).isEqualTo(propertyMap.get(XAxis.FONTSIZE).getExpectedValue());
         assertThat(page.xAxisSecondLabel().getTransform()).contains("rotate("+propertyMap.get(XAxis.ROTATION).getValue());
-        assertThat(page.xAxisFirstLabel().getText()).isEqualTo("");
-        assertThat(page.xAxisLastLabel().getText()).isEqualTo("");
+        assertThat(page.xAxisFirstLabel().getValue()).isEqualTo("");
+        assertThat(page.xAxisLastLabel().getValue()).isEqualTo("");
     }
     public void testYAxisLabelStyle(Map<String, Property> propertyMap, HighchartsPage page){
         String regex="^\\"+propertyMap.get(YAxis.PREFIX).getValue()+".+\\"+propertyMap.get(YAxis.SUFFIX).getValue()+"$";
@@ -263,8 +268,8 @@ public class HighchartsTest extends BaseTest {
         CustomFluentWebElementComponent symbolElement = page.legendSymbol();
         assertThat(symbolElement.getHeight()).isEqualTo(propertyMap.get(Legend.LEGEND_SYMBOL_HEIGHT).getExpectedValue());
         assertThat(symbolElement.getBorderRadiusX()).isEqualTo(propertyMap.get(Legend.LEGEND_SYMBOL_RADIUS).getExpectedValue());
-        assertThat(page.legendItemText().getPaddingOrWidth(symbolWidth)).isEqualTo(propertyMap.get(Legend.LEGEND_SYMBOL_PADDING).getExpectedValue());
-        assertThat(page.legendItemText().getPaddingOrWidth(symbolPadding)).isEqualTo(propertyMap.get(Legend.LEGEND_SYMBOL_WIDTH).getExpectedValue());
+//        assertThat(page.legendItemText().getPaddingOrWidth(symbolWidth)).isEqualTo(propertyMap.get(Legend.LEGEND_SYMBOL_PADDING).getExpectedValue());
+//        assertThat(page.legendItemText().getPaddingOrWidth(symbolPadding)).isEqualTo(propertyMap.get(Legend.LEGEND_SYMBOL_WIDTH).getExpectedValue());
     }
 
     public void testLegendStyle(Map<String, Property> propertyMap, HighchartsPage page) {
@@ -345,6 +350,59 @@ public class HighchartsTest extends BaseTest {
         assertThat(toolTipText.getColor()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_TEXT_COLOR).getExpectedValue());
 
     }
+    public void testToolTipText(Map<String, Property> propertyMap, HighchartsPage page) throws Exception {
+        page.generateTooltip();
+        CustomFluentWebElementComponent toolTipPath = page.toolTipBox();
+        CustomFluentWebElementComponent toolTipText = page.toolTipText();
+
+
+        assertThat(toolTipPath.getFillColor()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_BACKGROUND_COLOR).getExpectedValue());
+        assertThat(toolTipPath.getStrokeColor()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_BORDER_COLOR).getExpectedValue());
+//         TODO: Path radius is not there.
+//        assertThat(toolTipBox.getBorderRadiusX()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_BORDER_RADIUS).getExpectedValue());
+
+        //The stroke width is visible only after hovering
+        assertThat(toolTipPath.getStrokeWidth()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_BORDER_WIDTH).getExpectedValue());
+
+        //text assertions
+        assertThat(toolTipText.getFontWeight()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_FONT_WEIGHT).getExpectedValue());
+        assertThat(toolTipText.getFontFamily()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_FONT_FAMILY).getExpectedValue());
+        assertThat(toolTipText.getFontSize()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_FONT_SIZE).getExpectedValue()+"px");
+        assertThat(toolTipText.getColor()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_TEXT_COLOR).getExpectedValue());
+        String temp= toolTipText.getText();
+        if(temp.contains(propertyMap.get(Datalabel.TEXT).getExpectedValue()))
+            assertThat(propertyMap.get(Datalabel.TEXT).getExpectedValue()).isEqualTo(propertyMap.get(Datalabel.TEXT).getExpectedValue());
+        else
+            assertThat(temp).isEqualTo(propertyMap.get(Datalabel.TEXT).getExpectedValue());
+
+
+
+    }
+
+    public void testToolTipTrendLineStyle(Map<String, Property> propertyMap, HighchartsPage page) throws Exception {
+        page.generateTooltipOnTrendLine();
+        CustomFluentWebElementComponent toolTipPath = page.toolTipBox();
+        CustomFluentWebElementComponent toolTipText = page.toolTipText();
+
+
+//        assertThat(toolTipPath.getFillColor()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_BACKGROUND_COLOR).getExpectedValue());
+        assertThat(toolTipPath.getStrokeColor()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_BORDER_COLOR).getExpectedValue());
+//         TODO: Path radius is not there.
+//        assertThat(toolTipBox.getBorderRadiusX()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_BORDER_RADIUS).getExpectedValue());
+
+        //The stroke width is visible only after hovering
+        assertThat(toolTipPath.getStrokeWidth()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_BORDER_WIDTH).getExpectedValue());
+
+        //text assertions
+
+
+        assertThat(toolTipText.getFontSize()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_FONT_SIZE).getExpectedValue()+"px");
+        assertThat(toolTipText.getColor()).isEqualTo(propertyMap.get(Tooltip.TOOLTIP_TEXT_COLOR).getExpectedValue());
+        assertThat(toolTipText.getText().contains("y ="));
+
+
+
+    }
 
     public void testToolTipNumberFormat(Map<String, Property> propertyMap, HighchartsPage page)
             throws Exception{
@@ -416,6 +474,92 @@ public class HighchartsTest extends BaseTest {
 
         assertThat(actualValue).isEqualTo(expectedValue);
 
+
+    }
+
+    /*  Methods to test DATA SERIES */
+
+    public void testDataSelection(Map<String, Property> propertyMap, HighchartsPage page){
+        assertThat(page.dataLabel().getColor()).isEqualTo(propertyMap.get(Datalabel.COLOR).getExpectedValue());
+        assertThat(page.dataLabel().getFontFamily()).isEqualTo(propertyMap.get(Datalabel.FONTFAMILY).getValue());
+        assertThat(page.dataLabel().getFontWeight()).isEqualTo(propertyMap.get(Datalabel.FONTWEIGHT).getValue());
+        assertThat(page.dataLabel().getFontSize()).isEqualTo(propertyMap.get(Datalabel.FONTSIZE).getExpectedValue());
+    }
+
+    public void testDataSeriesLabels(Map<String, Property> propertyMap, HighchartsPage page){
+        CustomFluentWebElementComponent dataSeriesLabel = page.legendItemText();
+        assertThat(dataSeriesLabel.getText()).contains(propertyMap.get(Datalabel.TEXT).getExpectedValue());
+        assertThat(dataSeriesLabel.getColor()).isEqualTo(propertyMap.get(Datalabel.COLOR).getExpectedValue());
+        assertThat(dataSeriesLabel.getFontSize()).isEqualTo(propertyMap.get(Datalabel.FONTSIZE).getExpectedValue());
+    }
+
+    public void testDataSeriesHierarchyLabel(Map<String, Property> propertyMap, HighchartsPage page){
+
+        assertThat(page.highchartsHierarchyLabel().getColor()).isEqualTo(propertyMap.get(DataSeriesHierarcyLables.COLOR).getExpectedValue());
+        assertThat(page.highchartsHierarchyLabel().getFontSize()).isEqualTo(propertyMap.get(DataSeriesHierarcyLables.FONTSIZE).getExpectedValue());
+        assertNotNull(page.highchartsHierarchyLabel(),"");
+    }
+
+   // testDataSeriesShowTotal
+
+    public void testDataSeriesShowTotal(Map<String, Property> propertyMap, HighchartsPage page) throws NullPointerException{
+        String temp=propertyMap.get(DataSeriesHierarcyLables.SHOWTOTAL).getExpectedValue();
+        String expected = temp.length()>0?temp: propertyMap.get(DataSeriesHierarcyLables.SHOWTOTALS).getExpectedValue();
+        assertThat(page.highchartsTotalText().getText()).contains(expected);
+        assertThat(page.highchartsTotalText().getColor()).isEqualTo(propertyMap.get(DataSeriesHierarcyLables.COLOR).getExpectedValue());
+        assertThat(page.highchartsTotalText().getFontSize()).isEqualTo(propertyMap.get(DataSeriesHierarcyLables.FONTSIZE).getExpectedValue());
+
+    }
+
+    public void testDataSeriesShowTotalDatabase(Map<String, Property> propertyMap, HighchartsPage page){
+        assertThat(page.highchartsTotalText().getText()).contains(propertyMap.get(DataSeriesHierarcyLables.SHOWTOTAL_DB).getExpectedValue());
+        assertThat(page.highchartsTotalText().getColor()).isEqualTo(propertyMap.get(DataSeriesHierarcyLables.COLOR).getExpectedValue());
+        assertThat(page.highchartsTotalText().getFontSize()).isEqualTo(propertyMap.get(DataSeriesHierarcyLables.FONTSIZE).getExpectedValue());
+
+    }
+
+
+
+    public void testDataSeriesColor(Map<String, Property> propertyMap, HighchartsPage page) throws InterruptedException{
+        String  dsActual= page.highchartsDataSeriesColor().getFillColor();
+        String dsExpected =propertyMap.get(DataSeries.SERIES_COLOR).getExpectedValue();
+        assertThat(page.legendItem().getText()).contains(propertyMap.get(Legend.LEGEND_ITEM_TEXT).getExpectedValue());
+        assertThat(page.legendItem().getFontSize()).isEqualTo(propertyMap.get(Legend.LEGEND_ITEM_FONT_SIZE).getExpectedValue());
+        assertThat(dsActual).isEqualTo(dsExpected);
+
+    }
+
+    public void testRuleTable(Map<String, Property> propertyMap, HighchartsPage page) throws InterruptedException{
+        String dsExpected =propertyMap.get(DataSeriesMarkers.MARKER_COLOR).getExpectedValue();
+        String  dsActual= page.highchartsMarkerColor().getFillColor();
+        assertThat(dsActual).isEqualTo(dsExpected);
+    }
+
+    public void testMarkerCustomization(Map<String, Property> propertyMap, HighchartsPage page) throws InterruptedException{
+        String dsExpected =propertyMap.get(DataSeriesMarkers.MARKER_COLOR).getExpectedValue();
+        String  dsActual= page.highchartsMarkerColor().getFillColor();
+        assertThat(dsActual).isEqualTo(dsExpected);
+    }
+
+    public void testDefaultMarkerColor(Map<String, Property> propertyMap, HighchartsPage page) throws InterruptedException{
+        String  dsActual= page.highchartsMarkerColor().getFillColor();
+        String dsColor = page.legendSymbol().getFillColor();
+        assertThat(dsActual).isEqualTo(dsColor);
+    }
+
+    public void testTrendLineEquation(Map<String, Property> propertyMap, HighchartsPage page) throws InterruptedException{
+        CustomFluentWebElementComponent trendLineEquation = page.highchartsTrendLineEquation();
+        assertThat(trendLineEquation.text()).isEqualTo(propertyMap.get(DataSeriesTrendLine.EQUATION_TEXT).getExpectedValue());
+        assertThat(trendLineEquation.getColor()).isEqualTo(propertyMap.get(DataSeriesTrendLine.EQUATION_COLOR).getExpectedValue());
+        assertThat(trendLineEquation.getTextAnchor()).isEqualTo(propertyMap.get(DataSeriesTrendLine.EQUATION_ALIGN).getExpectedValue());
+        assertThat(trendLineEquation.getFontSize()).isEqualTo(propertyMap.get(DataSeriesTrendLine.EQUATION_FONTSIZE).getExpectedValue());
+    }
+
+    public void testTrendLine(Map<String, Property> propertyMap, HighchartsPage page) throws InterruptedException{
+        CustomFluentWebElementComponent trendLineEquation = page.highchartsTrendLine();
+        assertThat(trendLineEquation.getStrokeColor()).isEqualTo(propertyMap.get(DataSeriesTrendLine.TRENDLINE_PICKER_COLOR).getExpectedValue());
+        CustomFluentWebElementComponent trendLineEquationLegendItem = page.highchartsTrendLineLegendItem();
+        assertThat(trendLineEquationLegendItem.getStrokeColor()).isEqualTo(propertyMap.get(DataSeriesTrendLine.EQUATION_SYMBOL_COLOR).getExpectedValue());
 
     }
 

@@ -20,6 +20,7 @@ import com.visualbi.automation.utils.AutomatedPropertiesReport;
 import org.apache.commons.io.FileUtils;
 import org.fluentlenium.adapter.testng.FluentTestNg;
 
+import org.fluentlenium.configuration.DefaultWebDriverFactories;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -76,6 +77,7 @@ public class BaseTest extends FluentTestNg {
         List<Property2> property2List;
         Component component;
         String testType=method.getAnnotation(VBITestConfig.class).testType();
+        String dataSourceName =method.getAnnotation(VBITestConfig.class).dataSource();
         JSONParser parser = new JSONParser();
         JSONObject defaultValueJSON = null;
          switch (testType)
@@ -127,7 +129,7 @@ public class BaseTest extends FluentTestNg {
          component= ChartEventsTestLayout.createLayout(component);
       String fileLocation= VBIConfig.ANALYSIS_WORKSPACE_PATH +"/"+componentName+"/";
         IBiappWriter biappXStreamWriter= new BiappXStreamWriter();
-        biappXStreamWriter.createBIAppFile(fileLocation,component,VBIConfig.SDK_NAME,VBIConfig.sdkVersion);
+        biappXStreamWriter.createBIAppFile(fileLocation,component,VBIConfig.SDK_NAME,VBIConfig.sdkVersion,dataSourceName);
     }
     @DataProvider(name = "vbiAutomationDataProvider")
     public Object[][] createTestData(Method method) {
@@ -220,7 +222,17 @@ public class BaseTest extends FluentTestNg {
     }
     @Override
     public WebDriver newWebDriver() {
-         if(VBIConfig.testMode.equals("browserstack")) {
+
+//         if(VBIConfig.testMode.equals("ie")){
+//             System.setProperty("webdriver.ie.driver",VBIConfig.IE_DRIVER);
+//            // DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+//             LoggingPreferences logPrefs = new LoggingPreferences();
+//             logPrefs.enable(LogType.BROWSER, Level.ALL);
+//            // capabilities.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
+//             return new ;
+//         }
+//         else
+             if(VBIConfig.testMode.equals("browserstack")) {
              JSONParser parser = new JSONParser();
              JSONObject config = null;
              try {

@@ -59,6 +59,8 @@ public final class Properties {
         public static final String FONTFAMILY ="datalabelfontfamily";
         public static final String COLOR ="datalabeltextcolor";
         public static final String FONTWEIGHT ="datalabelfontweight";
+        public static final String TEXT = "chartmeasurechange";
+        public static final String RULETABLE = "ruletable";
     }
     public static class Credit{
         public static final String ENABLE ="creditsenabled";
@@ -85,6 +87,8 @@ public final class Properties {
         public static final String LEGEND_ITEM_FONT_WEIGHT = "legenditemfontweight";
         public static final String LEGEND_ITEM_FONT_FAMILY = "legenditemfontfamily";
         public static final String LEGEND_BACKGROUNDCOLOR = "legendbackgroundcolor";
+        public static final String LEGEND_ITEM_TEXT ="legenditemtext";
+        public static final String LEGEND_ITEM_FONT_ALIGN ="legenditemfontalign";
 
         public static final String LEGEND_BORDER_COLOR = "legendbordercolor";
         public static final String LEGEND_BORDER_RADIUS = "legendborderradius";
@@ -117,10 +121,12 @@ public final class Properties {
     }
 
     public static class Tooltip {
+
         public static final String TOOLTIP_BACKGROUND_COLOR = "tooltipbackgroundcolor";
         public static final String TOOLTIP_BORDER_COLOR = "tooltipbordercolor";
         public static final String TOOLTIP_BORDER_RADIUS = "tooltipborderradius";
         public static final String TOOLTIP_BORDER_WIDTH = "tooltipborderwidth";
+        public static final String TOOLTIP_TEXT = "tooltipcolor";
         public static final String TOOLTIP_TEXT_COLOR = "tooltipcolor";
         public static final String TOOLTIP_FONT_WEIGHT = "tooltipfontweight";
         public static final String TOOLTIP_FONT_SIZE = "tooltipfontsize";
@@ -319,5 +325,84 @@ public final class Properties {
     public static class YAxisMajorTick{
         public static final String COLOR ="yaxistickcolor";
         public static final String WIDTH ="yaxistickwidth";
+    }
+
+    public static class DataSeriesHierarcyLables{
+        public static final String HLABEL_LINE ="xaxislabelstaggerline";
+        public static final String HLABEL_MAXLINE ="xaxislabelmaxstaggerline";
+        public static final String ENABLE ="enablehierarchylabels";
+        public static final String FONTSIZE="hierarchylabelsfontsize";
+        public static final String FONTFAMILY ="hierarchylabelsfontfamily";
+        public static final String COLOR ="hierarchylabelscolor";
+        public static final String SHOWTOTAL ="showtotal";
+        public static final String SHOWTOTALS ="showtotals";
+        public static final String SHOWTOTAL_DB ="showtotaldatabase";
+
+
+    }
+    public static class DataSeries{
+        public static final String SERIES_COLOR ="dataseriescolor";
+        public static final String ENABLE ="enablehierarchylabels";
+        public static final String FONTSIZE="hierarchylabelsfontsize";
+        public static final String FONTFAMILY ="hierarchylabelsfontfamily";
+        public static final String COLOR ="hierarchylabelscolor";
+        public static final String SHOWTOTAL ="showtotal";
+        public static final String MINCOLOR ="coloraxismincolor";
+        public static final String MAXCOLOR ="coloraxismaxcolor";
+        public static final String TREE_COLOR_TYPE ="treeColorType";
+    }
+
+    public static class DataSeriesMarkers{
+        public static final String MARKER_ENABLE ="enablehierarchylabels";
+        public static final String MARKER_COLOR ="markercolorholder";
+        public static final String ADD_MARKER = "addmarkers";
+    }
+
+    public static class DataSeriesTrendLine{
+        public static final String TRENDLINE_ENABLE ="trendlineenable";
+        public static final String IDENTICAL_COLOR = "trendlineidenticalcolor";
+        public static final String TRENDLINE_COLOR ="trendlinecolor";
+        public static final String TRENDLINE_PICKER_COLOR ="trendcolorpickervalue";
+
+        public static final String EQUATION_ENABLE ="trendlineequation";
+        public static final String EQUATION_TEXT ="trendlineequationtext";
+        public static final String EQUATION_COLOR ="trendlineequationcolor";
+        public static final String EQUATION_SYMBOL_COLOR ="trendlineequationsymbolcolor";
+        public static final String EQUATION_ALIGN ="trendlineequationalign";
+        public static final String EQUATION_FONTSIZE="trendlineequationfontsize";
+        public static final String EQUATION_FONTFAMILY ="trendlineequationfontfamily";
+    }
+
+    public static class DataSeriesBoxPlot{
+        public static final String FILL_COLOR = "boxplotplotoptionfillColor";
+        public static final String MEDIAN_COLOR = "boxplotplotoptionmedianColor";
+        public static final String STEM_COLOR = "boxplotplotoptionstemColor";
+        public static final String WHISKER_COLOR = "boxplotplotoptionwhiskerColor";
+        public static final String SERIES_COLOR = "boxplotplotseriesColor";
+        public static final String OUTLIER_COLOR = "boxplotplotseriesoutlier";
+
+    }
+
+    //VBX  Selectors
+    public static class ComboBox{
+        public static final String DISPLAY_DIMENSION = "dispkeytext";
+        public static final String SEND_DIMENSION = "sendkeytext";
+        public static final String DISPLAY_KEY_TYPE = "listkeytypedisplay";
+        public static final String SEND_KEY_TYPE = "listkeytypesend";
+        public static final String LIST_SORT = "listsort";
+        public static final String DROPDOWN_SIZE = "combominsize";
+
+        public static final String ACTIVATE_SEARCHING = "listsearch";
+        public static final String ACTIVATE_VERTICAL_SCROLL = "vbr";
+        public static final String ACTIVATE_HORIZONTAL_SCROLL = "hbr";
+        public static final String ACTIVATE_MULTISELECT = "allowmultiselect";
+        public static final String INCLUDE_ALMEMBERS = "listallmembers";
+        public static final String ALMEMBERS_TEXT = "listallmembertext";
+        public static final String ALMEMBERS_KEY = "listallmemberkey";
+        public static final String ACTIVATE_RUNTIME = "runtimekeytext";
+
+
+
+
     }
 }

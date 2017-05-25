@@ -18,297 +18,357 @@ import org.json.simple.JSONObject;
 import java.util.Map;
 
 /**
- * Created by Code Generation Tool on Mon Apr 10 22:29:32 CDT 2017.
- */
+* Created by Code Generation Tool on Wed May 10 04:39:40 CDT 2017.
+*/
 
 @VBIComponentConfig(componentName="PIEDRILLDOWNCHART",type="com_visualbi_charts_PieDrilldownChart")
 public class PieDrilldownChartTest extends HighchartsTest{
-    @Page
-    private PieDrilldownChartPage pieDrilldownChartPage;
+@Page
+private PieDrilldownChartPage pieDrilldownChartPage;
 
-    @VBITestConfig(properties ={
-            @VBIProperty(name= Title.TEXT,value= Text.TEXT1),
-            @VBIProperty(name=Title.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
-            @VBIProperty(name = Title.COLOR, value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-            @VBIProperty(name=Title.FONTWEIGHT,value = Font.Weight.BOLD),
-            @VBIProperty(name= Title.FONTFAMILY,value= Font.Family.VERDANA),
-            @VBIProperty(name=Title.ALIGN,value= Align.RIGHT,expectedValue = "end")
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"title"})
-    public void testTitle(Map<String, Property> propertyMap, String componentName){
-        pieDrilldownChartPage.go(componentName);
-        testTitle(propertyMap,pieDrilldownChartPage);
-    }
+@VBITestConfig(properties ={
+		@VBIProperty(name = Title.TEXT,value= Text.TEXT1),
+		@VBIProperty(name = Title.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
+		@VBIProperty(name = Title.COLOR, value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+		@VBIProperty(name = Title.FONTWEIGHT,value = Font.Weight.BOLD),
+		@VBIProperty(name = Title.FONTFAMILY,value = Font.Family.VERDANA),
+		@VBIProperty(name = Title.ALIGN,value = Align.RIGHT,expectedValue = "end")
+})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"title"})
+public void testTitle(Map<String, Property> propertyMap, String componentName){
+	pieDrilldownChartPage.go(componentName);
+	testTitle(propertyMap,pieDrilldownChartPage);
+}
 
-     @VBITestConfig(properties ={
-           @VBIProperty(name= SubTitle.TEXT,value= Text.TEXT1),
-           @VBIProperty(name=SubTitle.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
-           @VBIProperty(name = SubTitle.COLOR, value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-           @VBIProperty(name=SubTitle.FONTWEIGHT,value = Font.Weight.BOLD),
-           @VBIProperty(name= SubTitle.FONTFAMILY,value= Font.Family.VERDANA),
-           @VBIProperty(name=SubTitle.ALIGN,value= Align.RIGHT,expectedValue = "end")
-     })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"subtitle"})
-    public void testSubtitle(Map<String, Property> propertyMap, String componentName){
-       pieDrilldownChartPage.go(componentName);
-       testSubtitle(propertyMap,pieDrilldownChartPage);
-    }
-
-
-    @VBITestConfig(properties ={
-            @VBIProperty(name= GoogleFont.ENABLE,value=Common.ENABLE ),
-            @VBIProperty(name=GoogleFont.FONTFAMILY,value =Font.Family.CARDO),
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
-    public void testGoogleFont(Map<String, Property> propertyMap, String componentName){
-        pieDrilldownChartPage.go(componentName);
-        testGoogleFont(propertyMap,pieDrilldownChartPage);
-    }
-
-    @VBITestConfig(properties ={
-            @VBIProperty(name= PlotOption.MARGINTOP,value= Count.TWENTY),
-            @VBIProperty(name=PlotOption.MARGINLEFT,value = Count.TEN),
-            @VBIProperty(name = PlotOption.CHARTSHADOW, value =Common.ENABLE ,expectedValue = Colors.BLACK_HEX),
-            @VBIProperty(name=PlotOption.PLOTSHADOW,value = Common.ENABLE,expectedValue = Colors.BLACK_HEX),
-    })
-
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
-    public void testPlotOptions(Map<String, Property> propertyMap, String componentName){
-        pieDrilldownChartPage.go(componentName);
-        testPlotOptions(propertyMap,pieDrilldownChartPage);
-    }
-    @VBITestConfig(properties ={
-            @VBIProperty(name= Background.COLOR,value= Colors.BLACK_HEX),
-            @VBIProperty(name=Border.COLOR,value = Colors.GREY_HEX),
-            @VBIProperty(name = Border.WIDTH, value =Count.TEN),
-            @VBIProperty(name=Border.RADIUS,value = Count.FIVE)
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
-    public void testBackgroundAndBorder(Map<String, Property> propertyMap, String componentName){
-        pieDrilldownChartPage.go(componentName);
-        testBackgroundAndBorder(propertyMap,pieDrilldownChartPage);
-    }
-    @VBITestConfig(properties ={
-            @VBIProperty(name= PlotArea.BORDERWIDTH,value= Count.FIVE),
-            @VBIProperty(name=PlotArea.BORDERCOLOR,value = Colors.GREY_HEX),
-            @VBIProperty(name = PlotArea.BACKGROUNDCOLOR, value =Colors.RED_HEX),
-    })
-
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
-    public void testPlotArea(Map<String, Property> propertyMap, String componentName){
-        pieDrilldownChartPage.go(componentName);
-        testPlotArea(propertyMap,pieDrilldownChartPage);
-    }
-
-    
  @VBITestConfig(properties ={
-            @VBIProperty(name= Datalabel.ENABLE,value = Common.ENABLE),
-            @VBIProperty(name= NumberFormat.NO_OF_DECIMAL,value =  Count.THREE),
-            @VBIProperty(name= NumberFormat.PREFIX,value = Common.OPENBRACE),
-            @VBIProperty(name= NumberFormat.SUFFIX,value = "_"),
-            @VBIProperty(name= NumberFormat.DECIMAL_SEPARATOR,value = "?"),
-            @VBIProperty(name= NumberFormat.DECIMAL_SEPARATOR2,value = "?"),
-            //@VBIProperty(name= NumberFormat.THOUSANDS_SEPARATOR,value = "#")
-            //@VBIProperty(name= NumberFormat.THOUSANDS_SEPARATOR2,value = "#")
-            })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"numberformat"})
-    public void testNumberFormat(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-        testNumberFormat(propertyMap,pieDrilldownChartPage);
-    }
-
-    @VBITestConfig(properties ={
-            @VBIProperty(name=Datalabel.ENABLE,value = Common.ENABLE),
-            @VBIProperty(name=Datalabel.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
-            @VBIProperty(name = Datalabel.COLOR, value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-            @VBIProperty(name=Datalabel.FONTWEIGHT,value = Font.Weight.BOLD),
-            @VBIProperty(name= Datalabel.FONTFAMILY,value= Font.Family.VERDANA)
+	   @VBIProperty(name = SubTitle.TEXT,value = Text.TEXT1),
+	   @VBIProperty(name = SubTitle.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
+	   @VBIProperty(name = SubTitle.COLOR, value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+	   @VBIProperty(name = SubTitle.FONTWEIGHT,value = Font.Weight.BOLD),
+	   @VBIProperty(name = SubTitle.FONTFAMILY,value = Font.Family.VERDANA),
+	   @VBIProperty(name = SubTitle.ALIGN,value = Align.RIGHT,expectedValue = "end")
+ })
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"subtitle"})
+public void testSubtitle(Map<String, Property> propertyMap, String componentName){
+   pieDrilldownChartPage.go(componentName);
+   testSubtitle(propertyMap,pieDrilldownChartPage);
+}
 
 
-    })
+@VBITestConfig(properties ={
+		@VBIProperty(name=GoogleFont.ENABLE,value=Common.ENABLE ),
+		@VBIProperty(name=GoogleFont.FONTFAMILY,value =Font.Family.CARDO),
+})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
+public void testGoogleFont(Map<String, Property> propertyMap, String componentName){
+	pieDrilldownChartPage.go(componentName);
+	testGoogleFont(propertyMap,pieDrilldownChartPage);
+}
 
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
-    public void testDataLabelStyle(Map<String, Property> propertyMap, String componentName){
-        pieDrilldownChartPage.go(componentName);
-        testDataLabelStyle(propertyMap,pieDrilldownChartPage);
-    }
-                                                                                                     @VBITestConfig(properties ={
-            @VBIProperty(name=Credit.ENABLE,value = Common.ENABLE),
-            @VBIProperty(name= Credit.TEXT,value= Text.TEXT1),
-            @VBIProperty(name=Credit.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
-            @VBIProperty(name = Credit.COLOR, value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-            @VBIProperty(name=Credit.FONTWEIGHT,value = Font.Weight.BOLD),
-            @VBIProperty(name= Credit.FONTFAMILY,value= Font.Family.VERDANA),
-            @VBIProperty(name=Credit.ALIGN,value= Align.RIGHT,expectedValue = "end"),
-            @VBIProperty(name=Credit.CURSOUR,value= Cursor.POINTER)
+@VBITestConfig(properties ={
+		@VBIProperty(name= PlotOption.MARGINTOP,value= Count.TWENTY),
+		@VBIProperty(name=PlotOption.MARGINLEFT,value = Count.TEN),
+		@VBIProperty(name = PlotOption.CHARTSHADOW, value =Common.ENABLE ,expectedValue = Colors.BLACK_HEX),
+		@VBIProperty(name=PlotOption.PLOTSHADOW,value = Common.ENABLE,expectedValue = Colors.BLACK_HEX),
+})
 
-    })
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
+public void testPlotOptions(Map<String, Property> propertyMap, String componentName){
+	pieDrilldownChartPage.go(componentName);
+	testPlotOptions(propertyMap,pieDrilldownChartPage);
+}
 
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"metadata"})
-    public void testCredits(Map<String, Property> propertyMap, String componentName){
-        pieDrilldownChartPage.go(componentName);
-        testCredits(propertyMap,pieDrilldownChartPage);
-    }
+@VBITestConfig(properties ={
+		@VBIProperty(name = Background.COLOR,value= Colors.BLACK_HEX),
+		@VBIProperty(name = Border.COLOR,value = Colors.GREY_HEX),
+		@VBIProperty(name = Border.WIDTH, value = Count.TEN),
+		@VBIProperty(name = Border.RADIUS,value = Count.FIVE)
+})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
+public void testBackgroundAndBorder(Map<String, Property> propertyMap, String componentName){
+	pieDrilldownChartPage.go(componentName);
+	testBackgroundAndBorder(propertyMap,pieDrilldownChartPage);
+}
 
+@VBITestConfig(properties ={
+		@VBIProperty(name = PlotArea.BORDERWIDTH,value = Count.FIVE),
+		@VBIProperty(name = PlotArea.BORDERCOLOR,value = Colors.GREY_HEX),
+		@VBIProperty(name = PlotArea.BACKGROUNDCOLOR, value = Colors.RED_HEX),
+})
 
-
-
-
-    @VBITestConfig(properties ={
-        @VBIProperty(name= Export.EXPORT_ICON_SYMBOL_FILL,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-        @VBIProperty(name= Export.EXPORT_ICON_SYMBOL_STROKE_WIDTH,value = Count.THREE,expectedValue =Count.THREE),
-        @VBIProperty(name= Export.EXPORT_ICON_SYMBOL_STROKE,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX)
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"export"})
-    public void testExportSymbolStyles(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-        testExportSymbolStyles(propertyMap,pieDrilldownChartPage);
-    }
-
-    @VBITestConfig(properties ={
-            @VBIProperty(name= Export.EXPORT_BACKGROUND_FILL,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-            @VBIProperty(name= Export.EXPORT_BACKGROUND_RADIUS,value =Count.THREE,expectedValue = Count.THREE),
-            @VBIProperty(name= Export.EXPORT_BACKGROUND_HOVER_FILL,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX)
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"export"})
-    public void testExportBackground(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-
-        testExportBackGround(propertyMap,pieDrilldownChartPage);
-    }
-
-    @VBITestConfig(properties ={
-        @VBIProperty(name= Export.EXPORT_ENABLED,value = ""),
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"export"})
-    public void testExportEnabled(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-
-        testExportIconEnabled(propertyMap,pieDrilldownChartPage);
-    }
-
-    @VBITestConfig(properties ={
-        @VBIProperty(name= Export.EXPORT_MENU_BACKGROUND_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-        @VBIProperty(name= Export.EXPORT_MENU_TEXT_COLOR,value = Colors.GREY_HEX,expectedValue =Colors.GREY_HEX),
-        @VBIProperty(name= Export.EXPORT_MENU_FONT_STYLE,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
-        @VBIProperty(name= Export.EXPORT_MENU_TEXT_HOVER_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-        @VBIProperty(name= Export.EXPORT_MENU_FONT_HOVER_STYLE,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
-        @VBIProperty(name= Export.EXPORT_MENU_HOVER_STYLE_BACKGROUND,value = Colors.VIOLET_HEX,expectedValue = Colors.VIOLET_HEX)
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"export"})
-    public void testExportDropDownMenu(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-
-        testExportDropDownStyles(propertyMap,pieDrilldownChartPage);
-    }
-
-      @VBITestConfig(properties ={
-            @VBIProperty(name= Tooltip.TOOLTIP_BACKGROUND_COLOR,value = Colors.BLACK_HEX,expectedValue = Colors.BLACK_HEX),
-            @VBIProperty(name= Tooltip.TOOLTIP_BORDER_COLOR,value = Colors.RED_HEX,expectedValue = Colors.RED_HEX),
-            @VBIProperty(name= Tooltip.TOOLTIP_BORDER_RADIUS,value = Count.TEN,expectedValue = Count.TEN),
-            @VBIProperty(name= Tooltip.TOOLTIP_BORDER_WIDTH,value = Count.THREE,expectedValue = Count.THREE),
-            @VBIProperty(name= Tooltip.TOOLTIP_TEXT_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-            @VBIProperty(name= Tooltip.TOOLTIP_FONT_WEIGHT,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
-            @VBIProperty(name= Tooltip.TOOLTIP_FONT_SIZE,value = Count.TWENTY,expectedValue = Count.TWENTY),
-            @VBIProperty(name= Tooltip.TOOLTIP_FONT_FAMILY,value = Font.Family.VERDANA,expectedValue = Font.Family.VERDANA)
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"tooltip"})
-    public void testTooltip(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-
-        testToolTipStyle(propertyMap,pieDrilldownChartPage);
-    }
-
-    @VBITestConfig(properties ={
-        @VBIProperty(name= Tooltip.TOOLTIP_DECIMAL_VALUE,value = Count.THREE,expectedValue = Count.THREE),
-        @VBIProperty(name= Tooltip.TOOLTIP_VALUE_PREFIX,value = Common.OPENBRACE),
-        @VBIProperty(name= Tooltip.TOOLTIP_VALUE_SUFFIX,value = Common.AMP),
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"tooltip"})
-    public void testToolTipNumberFormat(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-
-        testToolTipNumberFormat(propertyMap,pieDrilldownChartPage);
-    }
-              @VBITestConfig(properties ={
-            @VBIProperty(name= Legend.LEGEND_BACKGROUNDCOLOR,value = Colors.GREY_HEX,expectedValue =Colors.GREY_HEX ),
-            @VBIProperty(name= Legend.LEGEND_BORDER_WIDTH,value = Count.SIX,expectedValue = Count.SIX),
-            @VBIProperty(name= Legend.LEGEND_BORDER_RADIUS,value = Count.THREE,expectedValue = Count.THREE),
-            @VBIProperty(name= Legend.LEGEND_BORDER_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-        })
-        @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"legend"})
-        public void testLegendStyles(Map<String, Property> propertyMap, String componentName) throws Exception{
-            pieDrilldownChartPage.go(componentName);
-            testLegendStyle(propertyMap,pieDrilldownChartPage);
-        }
-           @VBITestConfig(properties ={
-        @VBIProperty(name= Legend.LEGEND_SYMBOL_WIDTH,value = Count.EIGHT,expectedValue = Count.EIGHT),
-        @VBIProperty(name= Legend.LEGEND_SYMBOL_HEIGHT,value = Count.TEN,expectedValue = Count.TEN),
-        @VBIProperty(name= Legend.LEGEND_SYMBOL_RADIUS,value = Count.THIRTY_ONE,expectedValue = Count.THIRTY_ONE),
-        @VBIProperty(name= Legend.LEGEND_SYMBOL_PADDING,value = Count.THIRTY_ONE,expectedValue = Count.THIRTY_ONE),
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"legend"})
-    public void testLegendSymbolStyles(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-        testLegendSymbolStyle(propertyMap,pieDrilldownChartPage,"8","31");
-    }
-     @VBITestConfig(properties ={
-                @VBIProperty(name= Legend.LEGEND_TITLE,value= "HelloWorld1",expectedValue = "HelloWorld1"),
-                @VBIProperty(name= Legend.LEGEND_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-                @VBIProperty(name= Legend.LEGEND_FONT_WEIGHT,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
-                @VBIProperty(name= Legend.LEGEND_FONT_SIZE,value = Count.TWENTY,expectedValue = Count.TWENTY+"px"),
-                @VBIProperty(name= Legend.LEGEND_FONT_FAMILY,value = Font.Family.VERDANA,expectedValue =Font.Family.VERDANA)
-        })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"legend"})
-    public void testLegendTitle(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-        testLegendTitle(propertyMap,pieDrilldownChartPage);
-    }
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
+public void testPlotArea(Map<String, Property> propertyMap, String componentName){
+	pieDrilldownChartPage.go(componentName);
+	testPlotArea(propertyMap,pieDrilldownChartPage);
+}
 
 
-    @VBITestConfig(properties ={
-            @VBIProperty(name= Legend.LEGEND_ITEM_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
-            @VBIProperty(name= Legend.LEGEND_ITEM_FONT_WEIGHT,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
-            @VBIProperty(name= Legend.LEGEND_ITEM_FONT_SIZE,value = Count.TWENTY,expectedValue = "20px"),
-            @VBIProperty(name= Legend.LEGEND_ITEM_FONT_FAMILY,value = Font.Family.VERDANA,expectedValue =Font.Family.VERDANA)
-    })
-    @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"legend"})
-    public void testLegendItemText(Map<String, Property> propertyMap, String componentName) throws Exception{
-        pieDrilldownChartPage.go(componentName);
-        testLegendFontStyle(propertyMap,pieDrilldownChartPage);
-    }
-        @VBITestConfig(properties ={},testType = "ztlGetterScriptTest")
-    @Test(alwaysRun=true,dataProvider = "vbiZtlGetterScriptAutomationDataProvider",groups = {"ztlscript"})
-    public void ztlGetterScriptTest(JSONObject getterJSON,JSONObject defaultValueJSON,String componentName) throws Exception{
-         pieDrilldownChartPage.go(componentName);
-        ZtlScriptTest ztlScriptTest=new ZtlScriptTest();
-        ztlScriptTest.testGetterScript(pieDrilldownChartPage,getterJSON,defaultValueJSON);
-    }
+@VBITestConfig(properties ={
+		@VBIProperty(name= Datalabel.ENABLE,value = Common.ENABLE),
+		@VBIProperty(name= NumberFormat.NO_OF_DECIMAL,value =  Count.THREE),
+		@VBIProperty(name= NumberFormat.PREFIX,value = Common.OPENBRACE),
+		@VBIProperty(name= NumberFormat.SUFFIX,value = "_"),
+		@VBIProperty(name= NumberFormat.DECIMAL_SEPARATOR,value = "?"),
+		@VBIProperty(name= NumberFormat.DECIMAL_SEPARATOR2,value = "?"),
+		//@VBIProperty(name= NumberFormat.THOUSANDS_SEPARATOR,value = "#")
+		//@VBIProperty(name= NumberFormat.THOUSANDS_SEPARATOR2,value = "#")
+		})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"numberformat"})
+public void testNumberFormat(Map<String, Property> propertyMap, String componentName) throws Exception{
+	pieDrilldownChartPage.go(componentName);
+	testNumberFormat(propertyMap,pieDrilldownChartPage);
+}
 
-    @VBITestConfig(properties ={},testType = "ztlSetterScriptTest")
-    @Test(alwaysRun=true,dataProvider = "vbiZtlSetterScriptAutomationDataProvider",groups = {"ztlscript"})
-    public void ztlSetterScriptTest(JSONObject setterJSON,JSONObject defaultValueJSON,JSONObject getterReverseJSON,String componentName) throws Exception{
-              pieDrilldownChartPage.go(componentName);
-        ZtlScriptTest ztlScriptTest=new ZtlScriptTest();
-        ztlScriptTest.testSetterScript(pieDrilldownChartPage,setterJSON,defaultValueJSON,getterReverseJSON);
-    }
-        @VBITestConfig(properties ={
-               @VBIProperty(name=Event.ON_CLICK_EVENT,value ="select" )
-       },
-               properties2 = {@VBIProperty2(name = Event.ON_SELECT,value = "RESULT_TEXT.setText(\"ON_SELECT_TEST\");",expectedValue = "ON_SELECT_TEST")},
-               testType = "chartEventTest")
-       @Test(alwaysRun=true,dataProvider = "vbiChartEventAutomationDataProvider",groups = {"chartevent","onclickevent"})
-       public void testOnSelect(Map<String, Property2> property2Map, String componentName) throws Exception{
-           pieDrilldownChartPage.go(componentName);
-           testOnSelect(property2Map,pieDrilldownChartPage);
-       }
-                 @VBITestConfig(properties2 = {
-                   @VBIProperty2(name = Event.ON_CHART_LOAD,value = "RESULT_TEXT.setText(\"ON_CHART_LOAD_TEST\");",expectedValue = "ON_CHART_LOAD_TEST")},
-                   testType = "chartEventTest")
-       @Test(alwaysRun=true,dataProvider = "vbiChartEventAutomationDataProvider",groups = {"chartevent","chartloadevent"})
-       public void testOnChartLoad(Map<String, Property2> property2Map, String componentName) throws Exception{
-          pieDrilldownChartPage.go(componentName);
-           testOnChartLoad(property2Map,pieDrilldownChartPage);
-       }
+@VBITestConfig(properties ={
+		@VBIProperty(name=Datalabel.ENABLE,value = Common.ENABLE),
+		@VBIProperty(name=Datalabel.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
+		@VBIProperty(name= Datalabel.COLOR, value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+		@VBIProperty(name=Datalabel.FONTWEIGHT,value = Font.Weight.BOLD),
+		@VBIProperty(name= Datalabel.FONTFAMILY,value= Font.Family.VERDANA)
+})
+
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"style"})
+public void testDataLabelStyle(Map<String, Property> propertyMap, String componentName){
+	pieDrilldownChartPage.go(componentName);
+	testDataLabelStyle(propertyMap,pieDrilldownChartPage);
+}
+  @VBITestConfig(properties ={
+	@VBIProperty(name=Credit.ENABLE,value = Common.ENABLE),
+	@VBIProperty(name= Credit.TEXT,value= Text.TEXT1),
+	@VBIProperty(name=Credit.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
+	@VBIProperty(name = Credit.COLOR, value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+	@VBIProperty(name=Credit.FONTWEIGHT,value = Font.Weight.BOLD),
+	@VBIProperty(name= Credit.FONTFAMILY,value= Font.Family.VERDANA),
+	@VBIProperty(name=Credit.ALIGN,value= Align.RIGHT,expectedValue = "end"),
+	@VBIProperty(name=Credit.CURSOUR,value= Cursor.POINTER)
+
+})
+
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"metadata"})
+public void testCredits(Map<String, Property> propertyMap, String componentName){
+	pieDrilldownChartPage.go(componentName);
+	testCredits(propertyMap,pieDrilldownChartPage);
+}
+
+@VBITestConfig(properties ={
+	@VBIProperty(name= Export.EXPORT_ICON_SYMBOL_FILL,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+	@VBIProperty(name= Export.EXPORT_ICON_SYMBOL_STROKE_WIDTH,value = Count.THREE,expectedValue =Count.THREE),
+	@VBIProperty(name= Export.EXPORT_ICON_SYMBOL_STROKE,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX)
+})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"export"})
+public void testExportSymbolStyles(Map<String, Property> propertyMap, String componentName) throws Exception{
+	pieDrilldownChartPage.go(componentName);
+	testExportSymbolStyles(propertyMap,pieDrilldownChartPage);
+}
+
+@VBITestConfig(properties ={
+		@VBIProperty(name= Export.EXPORT_BACKGROUND_FILL,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+		@VBIProperty(name= Export.EXPORT_BACKGROUND_RADIUS,value =Count.THREE,expectedValue = Count.THREE),
+		@VBIProperty(name= Export.EXPORT_BACKGROUND_HOVER_FILL,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX)
+})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"export"})
+public void testExportBackground(Map<String, Property> propertyMap, String componentName) throws Exception{
+	pieDrilldownChartPage.go(componentName);
+
+	testExportBackGround(propertyMap,pieDrilldownChartPage);
+}
+
+@VBITestConfig(properties ={
+	@VBIProperty(name= Export.EXPORT_ENABLED,value = ""),
+})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"export"})
+public void testExportEnabled(Map<String, Property> propertyMap, String componentName) throws Exception{
+	pieDrilldownChartPage.go(componentName);
+
+	testExportIconEnabled(propertyMap,pieDrilldownChartPage);
+}
+
+@VBITestConfig(properties ={
+	@VBIProperty(name= Export.EXPORT_MENU_BACKGROUND_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+	@VBIProperty(name= Export.EXPORT_MENU_TEXT_COLOR,value = Colors.GREY_HEX,expectedValue =Colors.GREY_HEX),
+	@VBIProperty(name= Export.EXPORT_MENU_FONT_STYLE,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
+	@VBIProperty(name= Export.EXPORT_MENU_TEXT_HOVER_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+	@VBIProperty(name= Export.EXPORT_MENU_FONT_HOVER_STYLE,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
+	@VBIProperty(name= Export.EXPORT_MENU_HOVER_STYLE_BACKGROUND,value = Colors.VIOLET_HEX,expectedValue = Colors.VIOLET_HEX)
+})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"export"})
+public void testExportDropDownMenu(Map<String, Property> propertyMap, String componentName) throws Exception{
+	pieDrilldownChartPage.go(componentName);
+
+	testExportDropDownStyles(propertyMap,pieDrilldownChartPage);
+}
+
+	@VBITestConfig(properties ={
+			@VBIProperty(name= Tooltip.TOOLTIP_BACKGROUND_COLOR,value = Colors.BLACK_HEX,expectedValue = Colors.BLACK_HEX),
+			@VBIProperty(name= Tooltip.TOOLTIP_BORDER_COLOR,value = Colors.RED_HEX,expectedValue = Colors.RED_HEX),
+			@VBIProperty(name= Tooltip.TOOLTIP_BORDER_RADIUS,value = Count.TEN,expectedValue = Count.TEN),
+			@VBIProperty(name= Tooltip.TOOLTIP_BORDER_WIDTH,value = Count.THREE,expectedValue = Count.THREE),
+			@VBIProperty(name= Tooltip.TOOLTIP_TEXT_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+			@VBIProperty(name= Tooltip.TOOLTIP_FONT_WEIGHT,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
+			@VBIProperty(name= Tooltip.TOOLTIP_FONT_SIZE,value = Count.TWENTY,expectedValue = Count.TWENTY),
+			@VBIProperty(name= Tooltip.TOOLTIP_FONT_FAMILY,value = Font.Family.VERDANA,expectedValue = Font.Family.VERDANA)
+	})
+	@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"tooltip"})
+	public void testTooltip(Map<String, Property> propertyMap, String componentName) throws Exception{
+		pieDrilldownChartPage.go(componentName);
+		testToolTipStyle(propertyMap,pieDrilldownChartPage);
+	}
+
+	@VBITestConfig(properties ={
+		@VBIProperty(name= Tooltip.TOOLTIP_DECIMAL_VALUE,value = Count.THREE,expectedValue = Count.THREE),
+		@VBIProperty(name= Tooltip.TOOLTIP_VALUE_PREFIX,value = Common.OPENBRACE),
+		@VBIProperty(name= Tooltip.TOOLTIP_VALUE_SUFFIX,value = Common.AMP),
+	},dataSource = "Mul Mes 2 Dim")
+	@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"tooltip"})
+	public void testToolTipNumberFormat(Map<String, Property> propertyMap, String componentName) throws Exception{
+		pieDrilldownChartPage.go(componentName);
+		testToolTipNumberFormat(propertyMap,pieDrilldownChartPage);
+	}
+	@VBITestConfig(properties ={
+		@VBIProperty(name= Legend.LEGEND_BACKGROUNDCOLOR,value = Colors.GREY_HEX,expectedValue =Colors.GREY_HEX ),
+		@VBIProperty(name= Legend.LEGEND_BORDER_WIDTH,value = Count.SIX,expectedValue = Count.SIX),
+		@VBIProperty(name= Legend.LEGEND_BORDER_RADIUS,value = Count.THREE,expectedValue = Count.THREE),
+		@VBIProperty(name= Legend.LEGEND_BORDER_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+	})
+	@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"legend"})
+	public void testLegendStyles(Map<String, Property> propertyMap, String componentName) throws Exception{
+		pieDrilldownChartPage.go(componentName);
+		testLegendStyle(propertyMap,pieDrilldownChartPage);
+	}
+	@VBITestConfig(properties ={
+		@VBIProperty(name= Legend.LEGEND_SYMBOL_WIDTH,value = Count.EIGHT,expectedValue = Count.EIGHT),
+		@VBIProperty(name= Legend.LEGEND_SYMBOL_HEIGHT,value = Count.TEN,expectedValue = Count.TEN),
+		@VBIProperty(name= Legend.LEGEND_SYMBOL_RADIUS,value = Count.THIRTY_ONE,expectedValue = Count.THIRTY_ONE),
+		@VBIProperty(name= Legend.LEGEND_SYMBOL_PADDING,value = Count.THIRTY_ONE,expectedValue = Count.THIRTY_ONE),
+	})
+	@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"legend"})
+	public void testLegendSymbolStyles(Map<String, Property> propertyMap, String componentName) throws Exception{
+		pieDrilldownChartPage.go(componentName);
+		testLegendSymbolStyle(propertyMap,pieDrilldownChartPage,"8","31");
+	}
+@VBITestConfig(properties ={
+	@VBIProperty(name= Legend.LEGEND_TITLE,value= "HelloWorld1",expectedValue = "HelloWorld1"),
+	@VBIProperty(name= Legend.LEGEND_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+	@VBIProperty(name= Legend.LEGEND_FONT_WEIGHT,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
+	@VBIProperty(name= Legend.LEGEND_FONT_SIZE,value = Count.TWENTY,expectedValue = Count.TWENTY+"px"),
+	@VBIProperty(name= Legend.LEGEND_FONT_FAMILY,value = Font.Family.VERDANA,expectedValue =Font.Family.VERDANA)
+})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"legend"})
+public void testLegendTitle(Map<String, Property> propertyMap, String componentName) throws Exception{
+	pieDrilldownChartPage.go(componentName);
+	testLegendTitle(propertyMap,pieDrilldownChartPage);
+}
+
+
+@VBITestConfig(properties ={
+		@VBIProperty(name= Legend.LEGEND_ITEM_COLOR,value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+		@VBIProperty(name= Legend.LEGEND_ITEM_FONT_WEIGHT,value = Font.Weight.BOLD,expectedValue = Font.Weight.BOLD),
+		@VBIProperty(name= Legend.LEGEND_ITEM_FONT_SIZE,value = Count.TWENTY,expectedValue = "20px"),
+		@VBIProperty(name= Legend.LEGEND_ITEM_FONT_FAMILY,value = Font.Family.VERDANA,expectedValue =Font.Family.VERDANA)
+})
+@Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"legend"})
+public void testLegendItemText(Map<String, Property> propertyMap, String componentName) throws Exception{
+	pieDrilldownChartPage.go(componentName);
+	testLegendFontStyle(propertyMap,pieDrilldownChartPage);
+}
+@VBITestConfig(properties ={},testType = "ztlGetterScriptTest")
+@Test(alwaysRun=true,dataProvider = "vbiZtlGetterScriptAutomationDataProvider",groups = {"ztlscript"})
+public void ztlGetterScriptTest(JSONObject getterJSON,JSONObject defaultValueJSON,String componentName) throws Exception{
+	 pieDrilldownChartPage.go(componentName);
+	ZtlScriptTest ztlScriptTest=new ZtlScriptTest();
+	ztlScriptTest.testGetterScript(pieDrilldownChartPage,getterJSON,defaultValueJSON);
+}
+
+@VBITestConfig(properties ={},testType = "ztlSetterScriptTest")
+@Test(alwaysRun=true,dataProvider = "vbiZtlSetterScriptAutomationDataProvider",groups = {"ztlscript"})
+public void ztlSetterScriptTest(JSONObject setterJSON,JSONObject defaultValueJSON,JSONObject getterReverseJSON,String componentName) throws Exception{
+	pieDrilldownChartPage.go(componentName);
+	ZtlScriptTest ztlScriptTest=new ZtlScriptTest();
+	ztlScriptTest.testSetterScript(pieDrilldownChartPage,setterJSON,defaultValueJSON,getterReverseJSON);
+}
+	@VBITestConfig(properties ={
+	   @VBIProperty(name=Event.ON_CLICK_EVENT,value ="select" )	},
+	   properties2 = {@VBIProperty2(name = Event.ON_SELECT,value = "RESULT_TEXT.setText(\"ON_SELECT_TEST\");",expectedValue = "ON_SELECT_TEST")},
+	   testType = "chartEventTest")
+	@Test(alwaysRun=true,dataProvider = "vbiChartEventAutomationDataProvider",groups = {"chartevent","onclickevent"})
+	public void testOnSelect(Map<String, Property2> property2Map, String componentName) throws Exception{
+	   pieDrilldownChartPage.go(componentName);
+	   testOnSelect(property2Map,pieDrilldownChartPage);
+	}
+	@VBITestConfig(properties2 = {
+	@VBIProperty2(name = Event.ON_CHART_LOAD,value = "RESULT_TEXT.setText(\"ON_CHART_LOAD_TEST\");",expectedValue = "ON_CHART_LOAD_TEST")},
+	testType = "chartEventTest")
+	@Test(alwaysRun=true,dataProvider = "vbiChartEventAutomationDataProvider",groups = {"chartevent","chartloadevent"})
+	public void testOnChartLoad(Map<String, Property2> property2Map, String componentName) throws Exception{
+		pieDrilldownChartPage.go(componentName);
+		testOnChartLoad(property2Map,pieDrilldownChartPage);
+	}
+   /********** Data Series -> Data Selection ***/
+   @VBITestConfig(properties ={
+		   @VBIProperty(name= Properties.Datalabel.ENABLE,value = Common.ENABLE),
+		   @VBIProperty(name= Properties.Datalabel.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
+		   @VBIProperty(name = Properties.Datalabel.COLOR, value = Colors.GREY_HEX,expectedValue = Colors.GREY_HEX),
+		   @VBIProperty(name= Properties.Datalabel.FONTWEIGHT,value = Font.Weight.BOLD),
+		   @VBIProperty(name= Properties.Datalabel.FONTFAMILY,value= Font.Family.VERDANA)
+
+   }, dataSource = "Mul Mes 2 Dim")
+   @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"dataseries"})
+   public void testDataSelection(Map<String, Property> propertyMap, String componentName){
+	   pieDrilldownChartPage.go(componentName);
+	   testDataSelection(propertyMap,pieDrilldownChartPage);
+   }
+
+
+
+
+   /********** Data Series -> General***/
+   @VBITestConfig(properties ={
+		   @VBIProperty(name= Properties.Legend.LEGEND_ITEM_TEXT,value = Properties.Title.TEXT),
+		   @VBIProperty(name= Properties.Legend.LEGEND_ITEM_FONT_SIZE,value = Count.TEN,expectedValue = "12px"),
+		   @VBIProperty(name= Properties.Legend.LEGEND_ITEM_FONT_ALIGN,value = Align.LEFT,expectedValue = "left"),
+		   @VBIProperty(name= Properties.DataSeries.SERIES_COLOR,value = "#400080,#FF6657,#F3A730,#946B66,#B0AD53,#7AC1DE,#F1C337",expectedValue = "#400080")
+   }, dataSource = "Mul Mes 2 Dim")
+
+   @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"dataseries"})
+   public void testDataSeriesColor(Map<String, Property> propertyMap, String componentName) throws InterruptedException{
+	   pieDrilldownChartPage.go(componentName);
+	   testDataSeriesColor(propertyMap,pieDrilldownChartPage);
+   }
+
+   @VBITestConfig(properties ={
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.ENABLE,value = "X"),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.HLABEL_LINE,value = Count.ZERO),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.HLABEL_MAXLINE, value = Count.ZERO),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.COLOR,value = Colors.BLACK_HEX,expectedValue = Colors.BLACK_HEX),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.SHOWTOTALS,value= "X",expectedValue = "Total"),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.SHOWTOTAL,value= "X",expectedValue = "")
+
+
+   }, dataSource = "Mul Mes 2 Dim")
+
+   @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"dataseries"})
+   public void testDataSeriesShowTotal(Map<String, Property> propertyMap, String componentName){
+	   pieDrilldownChartPage.go(componentName);
+	   testDataSeriesShowTotal(propertyMap,pieDrilldownChartPage);
+
+   }
+
+   @VBITestConfig(properties ={
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.ENABLE,value = "X"),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.HLABEL_LINE,value = Count.ZERO),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.HLABEL_MAXLINE, value = Count.ZERO),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.COLOR,value = Colors.BLACK_HEX,expectedValue = Colors.BLACK_HEX),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.FONTSIZE,value = Count.TEN,expectedValue = Count.TEN+"px"),
+		   @VBIProperty(name= Properties.DataSeriesHierarcyLables.SHOWTOTAL_DB,value= "X",expectedValue = "Overall Result")
+   }, dataSource = "Mul Mes 2 Dim")
+
+   @Test(alwaysRun=true,dataProvider = "vbiAutomationDataProvider",groups = {"dataseries"})
+   public void testDataSeriesShowTotalDatabase(Map<String, Property> propertyMap, String componentName){
+	   pieDrilldownChartPage.go(componentName);
+	   testDataSeriesShowTotalDatabase(propertyMap,pieDrilldownChartPage);
+
+   }
+
 
 }

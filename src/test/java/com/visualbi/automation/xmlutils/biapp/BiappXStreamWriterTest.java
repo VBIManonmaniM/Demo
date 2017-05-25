@@ -13,7 +13,7 @@ public class BiappXStreamWriterTest {
     public  void testCreateBIAppFile(){
         IBiappWriter biappXStreamWriter= new BiappXStreamWriter();
 
-        biappXStreamWriter.createBIAppFile("",null,"","");
+        biappXStreamWriter.createBIAppFile("",null,"","","");
         //assert if the file is created
         //assert if the xml contains the right sdk version
 

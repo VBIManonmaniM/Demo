@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
  * Created by praveenn on 1/10/2017.
  */
 public class BiappXStreamWriter implements  IBiappWriter {
-    public void createBIAppFile(String filePath, com.visualbi.automation.xmlutils.models.Component component, String sdkName, String sdkVersion) {
+    public void createBIAppFile(String filePath, com.visualbi.automation.xmlutils.models.Component component, String sdkName, String sdkVersion,String dataSourceName) {
         String[] excludeDs=new String[]{"COLUMNBARDRILLDOWNCHART","FUNNELPYRAMIDCHART","PIEDRILLDOWNCHART","TREEMAPDRILLDOWN"};
        XStream xstream = new XStream(new CustomizedDomDriver());
         xstream.processAnnotations(BiappRoot.class);
@@ -33,7 +33,8 @@ public class BiappXStreamWriter implements  IBiappWriter {
         Component applicationProperties = new Component("APPLICATION_PROPERTIES","APPLICATION_PROPERTIES");
         applicationProperties.addProperties(new String[][]{{"THEME","sap_bluecrystal"},{"COMPACT_MODE","X"}});
         DataSource dataSource=new DataSource("DS_1","com_visualbi_utilities_ConstantDataSource");
-        dataSource.addProperty(new Property("datasourcevalue","Mul Mes 1 Dim"));
+        dataSource.addProperty(new Property("datasourcevalue",dataSourceName));
+       // dataSource.addProperty(new Property("datasourcevalue","HierData 1"));
         Component absoluteLayout= new Component("ROOT","ABSOLUTE_LAYOUT_COMPONENT");
         Component convertedComponent = convertComponent(component);
         convertedComponent.addProperties(new String[][]{{"LEFT_MARGIN","0"},{"TOP_MARGIN","0"},{"RIGHT_MARGIN","0"},{"BOTTOM_MARGIN","0"},{"WIDTH","auto"},{"HEIGHT","auto"}});
@@ -41,7 +42,7 @@ public class BiappXStreamWriter implements  IBiappWriter {
         Component contextMenu =new Component("CONTEXT_MENU","CONTEXT_MENU_COMPONENT");
         absoluteLayout.addComponent(contextMenu);
         biapp.addComponent(applicationProperties);
-        if(!Arrays.asList(excludeDs).contains(component.getName()))
+        if(!Arrays.asList(excludeDs).contains(component.getName()) || !(dataSourceName.equals("Mul Mes 1 Dim")))
         {biapp.addDataSource(dataSource);
             convertedComponent.addProperties(new String[][]{{"DATA_SOURCE_ALIAS_REF","DS_1"}});
         }
