@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by praveenn on 1/12/2017.
  */
-@Wait(timeout = 30, timeUnit = TimeUnit.SECONDS)
+@Wait(timeout = 120, timeUnit = TimeUnit.SECONDS)
 public class HighchartsPage extends ApplicationPage {
 
     @FindBy(css = ".highcharts-title")

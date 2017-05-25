@@ -5,7 +5,7 @@ package com.visualbi.automation;
  */
 public class VBIConfig {
     public  static String sdkVersion ="1.59";
-    public static String buildNo ="DSX.DS14.SP1.VBI.v1.0.Suite.20170410.11.56.38";
+    public static String buildNo ="DSX.DS14.SP1.VBI.v1.0.Suite.20170413.11.33.24";
     public  static String designstudioPortNumber ="8002";
     public static String testMode ="local";
     public static String browserstackEnvironment ="WServer 2012 Chrome 56";
@@ -22,6 +22,7 @@ public class VBIConfig {
     public final static String WORKING_DIR=System.getProperty("user.dir");
     public final static String RESOURCE_PATH= WORKING_DIR +"\\src\\main\\resources";
     public final static String CHROME_DRIVER=RESOURCE_PATH+"\\drivers\\chromedriver.exe";
+    public final static String IE_DRIVER=RESOURCE_PATH+"\\drivers\\IEDriverServer.exe";
     public final static String URL_PATH="http://localhost:"+ designstudioPortNumber +"/aad/zen?APPLICATION={ApplicationName}";
     public final static String CUSTOM_REPORT_OUTPUT_PATH =WORKING_DIR+"\\test-output\\custom-testng-report";
     public final static String TEST_OUTPUT =WORKING_DIR +"\\test-output";
