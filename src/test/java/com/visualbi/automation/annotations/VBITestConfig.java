@@ -16,5 +16,6 @@ public @interface VBITestConfig {
     VBIProperty[] properties() default {};
     VBIProperty2[] properties2() default {};
     String testType() default "propertyTest";
+    String dataSource() default  "Mul Mes 1 Dim";
 
 }
