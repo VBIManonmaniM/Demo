@@ -38,6 +38,7 @@ public class PageCodeGeneration {
                 writer.flush();
 				//writer.flushEnd();
                 writer.close();
+				writer.open();
             } catch (IOException e) {
                 e.printStackTrace();
 				//mano
