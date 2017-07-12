@@ -25,6 +25,7 @@ public class PageCodeGeneration {
         charts.forEach(chart->{
             vc.put("Compo",chart)));
             vc.put("date123333",new Date());
+            vc.put("date112",new Date()111);
 
 
             BufferedWriter writer =
