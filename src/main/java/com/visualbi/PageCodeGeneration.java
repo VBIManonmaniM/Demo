@@ -32,9 +32,11 @@ public class PageCodeGeneration {
             try {
                 File file=new File(VBIConfig.WORKING_DIR+"\\src\\main\\java\\com\\visualbi\\automation\\pages\\"+chart+"Page.java");
                 file.createNewFile();
+				//file.delteNewFile();
                 writer = new BufferedWriter(new FileWriter(file));
                 template.merge(vc, writer);
                 writer.flush();
+				//writer.flushEnd();
                 writer.close();
             } catch (IOException e) {
                 e.printStackTrace();
