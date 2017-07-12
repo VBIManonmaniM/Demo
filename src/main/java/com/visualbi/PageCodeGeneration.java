@@ -23,7 +23,7 @@ public class PageCodeGeneration {
         Template template = Velocity.getTemplate("src/main/code-templates/FluentPageTemplate.vm");
         StringWriter sw = new StringWriter();
         charts.forEach(chart->{
-            vc.put("Component",chart);
+            vc.put("Compo",chart)));
             vc.put("date",new Date());
 
 
