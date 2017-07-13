@@ -10,6 +10,7 @@ public enum AutomationPropertyReader {
     public String getPropertyValue(String propertyName) {
 
         Properties prop = new Properties();
+		prop.add();
         InputStream in = AutomationPropertyReader.class.getResourceAsStream("testcases.properties");
         try {
             prop.load(in);
