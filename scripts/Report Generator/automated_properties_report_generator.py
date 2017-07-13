@@ -9,6 +9,7 @@ property_list22=pd.read_excel('VBX_APS_CHART_FINAL.XLSX',header=0,index_col=1)
 property_list=property_list.replace('No','NAP').replace('Yes','No')
 technical_names=property_list.index.values
 missing_technical_names=[]
+missing_technical_names=[]
 with open('automatedProperties.json') as data_file:
     automated_properties_list = json.load(data_file)
 for component_name in automated_properties_list:
