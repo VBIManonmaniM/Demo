@@ -5,6 +5,7 @@ import json
 import pandas as pd
 
 property_list=pd.read_excel('VBX_APS_CHART_FINAL.XLSX',header=0,index_col=0)
+property_list22=pd.read_excel('VBX_APS_CHART_FINAL.XLSX',header=0,index_col=1)
 property_list=property_list.replace('No','NAP').replace('Yes','No')
 technical_names=property_list.index.values
 missing_technical_names=[]
